@@ -1,0 +1,75 @@
+:root{--bg:#0f0e3f;--panel:#1a1960;--edge:#34338f;--text:#f6f1e7;--muted:#a9a7d8;--amber:#ffbd3d;--cyan:#ffd98e}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;color:var(--text);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  background:radial-gradient(900px 420px at 100% -80px,rgba(255,189,61,.20),transparent 70%),radial-gradient(900px 520px at -10% 0,rgba(140,82,255,.30),transparent 70%),var(--bg)}
+a{color:var(--cyan)}
+img{max-width:100%;height:auto}
+p,li{color:#dcd8f2}
+h1{font-size:30px;line-height:1.2;margin:0 0 14px;letter-spacing:.02em}
+h2{font-size:20px;margin:36px 0 8px;color:var(--amber);letter-spacing:.02em}
+h2{clear:both}
+h3{font-size:17px;margin:22px 0 4px}
+ul{padding-left:22px}
+.meta{color:var(--muted);font-size:14px;margin:0 0 18px}
+.brand{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);margin:0 0 6px}
+
+/* ---- thanh đầu trang chung ---- */
+.top{max-width:960px;margin:0 auto;padding:22px 20px 6px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 24px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo .ic{width:52px;height:52px;border-radius:12px;border:1px solid var(--edge)}
+.logo .wm{height:50px;width:auto}
+.top nav{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:15px}
+
+/* ---- băng rôn có ảnh game (trang chính sách / hỗ trợ) ---- */
+.banner{max-width:960px;margin:8px auto 0;padding:14px 20px 4px;display:grid;grid-template-columns:1fr auto;gap:18px 30px;align-items:center}
+.banner h1{font-size:34px;margin:0 0 8px}
+.banner p{margin:0 0 6px}
+.banner .pics{display:flex;gap:12px;align-items:flex-end}
+.banner .pics img{height:230px;width:auto;border:1px solid var(--edge);border-radius:16px;box-shadow:0 10px 34px rgba(0,0,0,.45)}
+.banner .pics img:nth-child(1){transform:rotate(-4deg)}
+.banner .pics img:nth-child(3){transform:rotate(4deg)}
+.banner .pics img:nth-child(2){margin-bottom:10px}
+hr.sep{max-width:960px;margin:14px auto 0;border:0;border-top:1px solid var(--edge)}
+
+/* ---- cột chữ ---- */
+main,footer{max-width:760px;margin:0 auto;padding:0 20px}
+footer{padding-top:28px;padding-bottom:48px;color:var(--muted);font-size:14px;border-top:1px solid var(--edge);margin-top:40px}
+.card{background:var(--panel);border:1px solid var(--edge);border-left:3px solid var(--amber);padding:14px 18px;margin:18px 0}
+.lang{margin-top:44px;padding-top:6px;border-top:1px solid var(--edge)}
+details{background:var(--panel);border:1px solid var(--edge);margin:10px 0;padding:10px 16px;border-radius:10px}
+details::after{content:"";display:block;clear:both}
+summary{cursor:pointer;color:var(--text);font-weight:600}
+
+/* ---- ảnh minh hoạ trong bài ---- */
+figure.fig{float:right;width:190px;margin:6px 0 10px 18px}
+figure.fig img{width:100%;border:1px solid var(--edge);border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,.4)}
+figure.fig figcaption{font-size:12.5px;line-height:1.4;color:var(--muted);margin-top:6px}
+details figure.fig{width:150px}
+section.block::after{content:"";display:block;clear:both}
+
+/* ---- trang chủ game ---- */
+.hero{max-width:960px;margin:0 auto;padding:30px 20px 8px;display:grid;grid-template-columns:auto 1fr;gap:22px 28px;align-items:center}
+.hero img.icon{width:120px;height:120px;border-radius:27px;border:1px solid var(--edge);box-shadow:0 10px 40px rgba(255,189,61,.28)}
+.hero img.wm{width:min(300px,70vw);height:auto;margin:0 0 4px}
+.hero .tag{color:var(--cyan);margin:0 0 4px;font-size:18px}
+.hero p.by{margin:0;color:var(--muted);font-size:14px}
+.cta{max-width:960px;margin:6px auto 0;padding:14px 20px 0;display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:13px 26px;font-weight:700;letter-spacing:.04em;text-decoration:none;border:1px solid var(--amber);color:#1b1450;background:var(--amber);border-radius:999px}
+.btn.ghost{background:transparent;color:var(--text);border-color:var(--edge)}
+.shots{max-width:960px;margin:30px auto 0;padding:0 20px;display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory}
+.shots img{height:440px;width:auto;border:1px solid var(--edge);border-radius:18px;scroll-snap-align:start;flex:none}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:18px 0 8px}
+.grid .card{margin:0}
+.grid h3{margin:0 0 4px;color:var(--text);font-size:16px}
+.grid p{margin:0;font-size:15px}
+
+@media(max-width:700px){
+  .banner{grid-template-columns:1fr}
+  .banner .pics img{height:170px}
+  .banner .pics img:nth-child(3){display:none}
+  figure.fig{float:none;width:200px;margin:12px auto}
+  .hero{grid-template-columns:1fr}
+  .shots img{height:360px}
+}
