@@ -3,23 +3,69 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Galactic Arrow 3D</title>
-<meta name="description" content="Galactic Arrow 3D is a neon sci-fi 3D cube puzzle game by Dolotech Technology Company Limited.">
+<title>Galactic Arrow 3D - Neon 3D cube puzzle</title>
+<meta name="description" content="Galactic Arrow 3D is a neon sci-fi 3D cube puzzle game with 1,000 levels and an epic story. By Dolotech Technology Company Limited.">
+<meta property="og:title" content="Galactic Arrow 3D">
+<meta property="og:description" content="Free the galaxy one cube at a time. 1,000 neon 3D puzzle levels and a space-opera story.">
+<meta property="og:image" content="img/shot1.jpg">
+<link rel="icon" href="img/icon.png">
 <link rel="stylesheet" href="style.css">
+<style>
+.hero{max-width:960px;margin:0 auto;padding:44px 20px 8px;display:grid;grid-template-columns:auto 1fr;gap:22px 26px;align-items:center}
+.hero img.icon{width:112px;height:112px;border-radius:25px;border:1px solid var(--edge);box-shadow:0 10px 40px rgba(92,225,230,.18)}
+.hero h1{font-size:40px;margin:0 0 6px}
+.hero .tag{color:var(--cyan);margin:0 0 4px;font-size:18px}
+.hero p.by{margin:0;color:var(--muted);font-size:14px}
+.cta{max-width:960px;margin:6px auto 0;padding:14px 20px 0;display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:13px 26px;font-weight:700;letter-spacing:.04em;text-decoration:none;border:1px solid var(--amber);color:#05070d;background:var(--amber);clip-path:polygon(12px 0,100% 0,100% calc(100% - 12px),calc(100% - 12px) 100%,0 100%,0 12px)}
+.btn.ghost{background:transparent;color:var(--text);border-color:var(--edge)}
+.shots{max-width:960px;margin:34px auto 0;padding:0 20px;display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory}
+.shots img{height:440px;width:auto;border:1px solid var(--edge);border-radius:18px;scroll-snap-align:start;flex:none}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:18px 0 8px}
+.grid .card{margin:0}
+.grid h3{margin:0 0 4px;color:var(--text);font-size:16px}
+.grid p{margin:0;font-size:15px}
+@media(max-width:560px){.hero{grid-template-columns:1fr;text-align:left}.hero h1{font-size:32px}.shots img{height:360px}}
+</style>
 </head>
 <body>
-<header>
-  <p class="brand">Dolotech Technology Company Limited</p>
-  <h1>Galactic Arrow 3D</h1>
-  <nav><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a></nav>
-</header>
-<main>
-  <p>Galactic Arrow 3D is a neon sci-fi puzzle game. Rotate the 3D cube, find the arrows that have a clear path and tap them in the right order to shoot them free. 1,000 levels, a story told in opening crawls, English and Vietnamese.</p>
-  <p>Mũi Tên Thiên Hà 3D là trò chơi giải đố khối lập phương 3D phong cách khoa học viễn tưởng. Xoay khối, tìm mũi tên có đường thoát và chạm đúng thứ tự để bắn chúng đi. 1.000 màn chơi, cốt truyện kể theo kiểu chữ cuộn, có tiếng Anh và tiếng Việt.</p>
-  <div class="card">
-    <p><a href="support.html">Support / Hỗ trợ</a><br><a href="privacy.html">Privacy Policy / Chính sách riêng tư</a></p>
+<section class="hero">
+  <img class="icon" src="img/icon.png" alt="Galactic Arrow 3D icon" width="112" height="112">
+  <div>
+    <p class="brand">Dolotech Technology Company Limited</p>
+    <h1>Galactic Arrow 3D</h1>
+    <p class="tag">Free the galaxy, one cube at a time.</p>
+    <p class="by">Free for iPhone and iPad. English and Tiếng Việt.</p>
   </div>
+</section>
+<div class="cta">
+  <a class="btn" href="https://apps.apple.com/app/id6827085406">Download on the App Store</a>
+  <a class="btn ghost" href="support.html">Support</a>
+  <a class="btn ghost" href="privacy.html">Privacy Policy</a>
+</div>
+
+<div class="shots" aria-label="Screenshots">
+  <img src="img/shot1.jpg" alt="Rotate the glowing 3D cube and tap arrows to shoot them free" loading="lazy">
+  <img src="img/shot2.jpg" alt="Special shapes such as a rocket from level 11" loading="lazy">
+  <img src="img/shot3.jpg" alt="A warship puzzle with dozens of arrows" loading="lazy">
+  <img src="img/shot4.jpg" alt="Story told in an opening crawl, with a Skip button" loading="lazy">
+</div>
+
+<main class="wrap">
+  <h2>The galaxy is locked. You hold the key.</h2>
+  <p>In 2128 the Vorr Hive Dominion sealed every free world inside a Cube Seal, a living prison made of glowing arrows. Only one pilot can read the seal language: you. Rotate the 3D cube, find the arrows that have a clear path and tap them in the right order to shoot them free.</p>
+
+  <div class="grid">
+    <div class="card"><h3>1,000 levels</h3><p>From a gentle first cube to brain-melting giants, with special shapes from level 11.</p></div>
+    <div class="card"><h3>A story in opening crawls</h3><p>A new chapter every 10 levels, told with your own name. Skip it any time.</p></div>
+    <div class="card"><h3>Neon galaxy look</h3><p>Glowing 3D cubes, a starfield sky and cinematic explosions when a level is cleared.</p></div>
+    <div class="card"><h3>Made for one thumb</h3><p>Smooth rotate and zoom. No account, no sign-in.</p></div>
+  </div>
+
+  <h2>Giới thiệu</h2>
+  <p>Mũi Tên Thiên Hà 3D là trò chơi giải đố khối lập phương 3D phong cách khoa học viễn tưởng. Xoay khối, tìm mũi tên có đường thoát và chạm đúng thứ tự để bắn chúng đi. 1.000 màn chơi, cốt truyện kể bằng chữ cuộn, có tiếng Anh và tiếng Việt.</p>
 </main>
-<footer>&copy; 2026 Dolotech Technology Company Limited</footer>
+<footer>&copy; 2026 Dolotech Technology Company Limited &middot; <a href="support.html">Support</a> &middot; <a href="privacy.html">Privacy Policy</a></footer>
 </body>
 </html>
