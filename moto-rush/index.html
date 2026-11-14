@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Moto Rush: City Rider Game — Ride. Pick up. Deliver.</title>
+<meta name="description" content="Moto Rush: City Rider Game — ride through a Saigon-inspired city, pick up quirky regulars and deliver them to famous landmarks before the timer runs out. Coming soon on the App Store.">
+<meta name="theme-color" content="#2a1b4d">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Moto Rush: City Rider Game">
+<meta property="og:description" content="Ride. Pick up. Deliver. A colorful Saigon-inspired city rider game. Coming soon on the App Store.">
+<meta property="og:url" content="https://dolotech.vn/moto-rush/">
+<meta property="og:image" content="https://dolotech.vn/moto-rush/media/keyart.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="media/icon-256.png">
+<link rel="apple-touch-icon" href="media/icon-256.png">
+<style>
+:root{--ink:#2a1b4d;--ink2:#22163f;--card:#3a2478;--card2:#45308c;--purple:#6c4bd8;--pink:#ff4f8b;--sun:#ffc43d;--mint:#4ee0b5;--cream:#fff4dc;--mute:#c9c0e8;--r:22px;--max:1120px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:var(--cream);font:16px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+html[data-lang="en"] .vi,html[data-lang="vi"] .en{display:none!important}
+img,video{max-width:100%;display:block}
+a{color:var(--sun)}
+h1,h2,h3{font-weight:800;line-height:1.15;letter-spacing:-.01em;margin:0}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+/* top bar */
+.top{position:sticky;top:0;z-index:20;background:rgba(34,22,63,.86);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
+.top .wrap{display:flex;align-items:center;gap:14px;min-height:62px}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:800;font-size:18px;margin-right:auto}
+.brand img{width:36px;height:36px;border-radius:9px}
+.nav{display:flex;gap:4px;flex-wrap:wrap}
+.nav a{color:var(--cream);text-decoration:none;font-weight:600;font-size:15px;padding:8px 12px;border-radius:999px}
+.nav a:hover{background:rgba(255,255,255,.08)}
+.langs{display:flex;background:rgba(255,255,255,.08);border-radius:999px;padding:3px}
+.langs button{border:0;background:transparent;color:var(--cream);font:700 13px/1 inherit;padding:8px 11px;border-radius:999px;cursor:pointer}
+.langs button[aria-pressed="true"]{background:var(--pink);color:#fff}
+@media (max-width:760px){.nav{display:none}}
+/* hero */
+.hero{position:relative;overflow:hidden;isolation:isolate}
+.hero .bg{position:absolute;inset:0;z-index:-2}
+.hero .bg img{width:100%;height:100%;object-fit:cover;object-position:70% 40%}
+.hero:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(34,22,63,.94) 0%,rgba(42,27,77,.82) 42%,rgba(42,27,77,.25) 75%,rgba(42,27,77,.1)),linear-gradient(0deg,var(--ink) 0%,rgba(42,27,77,0) 30%)}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding-top:64px;padding-bottom:80px;min-height:min(86vh,760px)}
+.logo{width:min(330px,70vw);height:auto;filter:drop-shadow(0 8px 18px rgba(0,0,0,.35))}
+.hero h1{font-size:clamp(34px,5.4vw,60px);margin:18px 0 6px;color:#fff;text-shadow:0 3px 0 rgba(42,27,77,.5)}
+.hero h1 .accent{color:var(--sun)}
+.hero .sub{font-size:clamp(17px,1.9vw,20px);color:var(--cream);max-width:560px;margin:14px 0 24px}
+.soon{display:inline-flex;align-items:center;gap:12px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);border-radius:16px;padding:10px 16px 10px 10px;margin-bottom:22px}
+.soon img{width:46px;height:46px;border-radius:11px}
+.soon b{display:block;color:#fff;font-size:16px}
+.soon small{color:var(--mute);font-size:13px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:16px;text-decoration:none;border-radius:999px;padding:13px 22px;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.pink{background:var(--pink);color:#fff;box-shadow:0 5px 0 #b8295c}
+.btn.ghost{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.25)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.chip{font-size:13px;font-weight:700;background:rgba(42,27,77,.7);border:1px solid rgba(255,255,255,.14);color:var(--cream);padding:6px 12px;border-radius:999px}
+.phone{justify-self:center;width:min(300px,78vw);border-radius:38px;padding:10px;background:linear-gradient(160deg,#fff4dc,#ffd7e4);box-shadow:0 30px 60px rgba(10,4,30,.55),0 0 0 1px rgba(255,255,255,.3) inset;transform:rotate(3deg)}
+.phone img,.phone video{border-radius:30px;width:100%;height:auto;aspect-ratio:9/16;object-fit:cover;background:#1b1233}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;padding-top:40px;text-align:left}.hero:before{background:linear-gradient(180deg,rgba(34,22,63,.6),rgba(42,27,77,.92) 55%,var(--ink))}.hero .phone{display:none}}
+/* sections */
+section{padding:72px 0}
+.kicker{display:inline-block;font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--pink);margin-bottom:10px}
+h2{font-size:clamp(28px,3.6vw,42px);color:#fff}
+.lead{color:var(--mute);font-size:18px;max-width:640px;margin:12px 0 0}
+.head{margin-bottom:34px}
+/* trailer */
+.trailer .wrap{display:grid;grid-template-columns:auto 1fr;gap:56px;align-items:center}
+.trailer .phone{transform:rotate(-2deg);width:min(320px,82vw)}
+.trailer ul{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:12px}
+.trailer li{display:flex;gap:12px;align-items:flex-start;background:var(--card);border-radius:16px;padding:14px 16px}
+.dot{flex:none;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:14px;color:var(--ink);background:var(--sun)}
+@media (max-width:860px){.trailer .wrap{grid-template-columns:1fr;gap:34px}.trailer .phone{justify-self:center}}
+/* features */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media (max-width:960px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.grid{grid-template-columns:1fr}}
+.card{background:linear-gradient(180deg,var(--card2),var(--card));border-radius:var(--r);padding:24px;box-shadow:0 6px 0 rgba(0,0,0,.18);border:1px solid rgba(255,255,255,.07)}
+.card h3{font-size:20px;color:#fff;margin:14px 0 8px}
+.card p{margin:0;color:var(--mute)}
+.ico{width:52px;height:52px;border-radius:16px;display:grid;place-items:center}
+.ico svg{width:28px;height:28px;stroke:#fff;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.i1{background:var(--pink)}.i2{background:#4cc9f0}.i3{background:var(--purple)}.i4{background:#ff8a3d}.i5{background:#e0a400}.i6{background:#1fb59a}
+.districts{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
+.districts span{font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.1);color:var(--cream)}
+/* regulars */
+.regs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media (max-width:960px){.regs{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.regs{grid-template-columns:1fr}}
+.reg{display:flex;gap:16px;align-items:center;background:var(--card);border-radius:var(--r);padding:16px;border:1px solid rgba(255,255,255,.07)}
+.reg img{flex:none;width:92px;height:92px;object-fit:contain;border-radius:50%;background:var(--c,#ff7aa8);border:4px solid var(--ink2)}
+.reg h3{font-size:19px;color:#fff}
+.trait{display:inline-block;margin:4px 0 6px;font-size:13px;font-weight:800;color:var(--sun)}
+.reg p{margin:0;font-size:14.5px;color:var(--mute)}
+/* screenshots */
+.shots{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(180px,1fr);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 4px 18px;scrollbar-width:thin}
+.shots figure{margin:0;scroll-snap-align:start}
+.shots img{width:100%;height:auto;aspect-ratio:9/16;object-fit:cover;border-radius:22px;border:6px solid var(--cream);box-shadow:0 14px 30px rgba(0,0,0,.35);background:#1b1233}
+.shots figcaption{text-align:center;font-weight:700;font-size:14.5px;margin-top:10px;color:var(--cream)}
+@media (max-width:700px){.shots{grid-auto-columns:68%}}
+/* cta */
+.cta .box{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;background:linear-gradient(135deg,var(--purple),var(--pink));border-radius:28px;padding:34px;box-shadow:0 18px 40px rgba(10,4,30,.4)}
+.cta .box img{width:120px;height:120px;border-radius:28px;box-shadow:0 10px 24px rgba(0,0,0,.3)}
+.cta h2{font-size:clamp(26px,3vw,36px)}
+.cta p{margin:8px 0 0;color:#fff;opacity:.95}
+.cta a{color:#fff;font-weight:800}
+@media (max-width:600px){.cta .box{grid-template-columns:1fr;text-align:center}.cta .box img{margin:0 auto}}
+.fine{color:var(--mute);font-size:14px;margin-top:14px}
+footer{border-top:1px solid rgba(255,255,255,.08);padding:30px 0 40px;color:var(--mute);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between}
+footer nav{display:flex;gap:16px;flex-wrap:wrap}
+footer a{color:var(--cream);text-decoration:none;font-weight:600}
+footer a:hover{text-decoration:underline}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="media/icon-256.png" alt="" width="36" height="36">Moto Rush</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#trailer"><span class="en">Trailer</span><span class="vi">Trailer</span></a>
+      <a href="#features"><span class="en">Features</span><span class="vi">Tính năng</span></a>
+      <a href="#regulars"><span class="en">Regulars</span><span class="vi">Khách quen</span></a>
+      <a href="#screens"><span class="en">Screens</span><span class="vi">Hình ảnh</span></a>
+      <a href="support.html"><span class="en">Support</span><span class="vi">Hỗ trợ</span></a>
+    </nav>
+    <div class="langs" role="group" aria-label="Language">
+      <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-set-lang="vi" aria-pressed="false">VI</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <picture class="bg">
+    <source media="(max-width:760px)" srcset="media/keyart_768.webp" type="image/webp">
+    <img src="media/keyart.jpg" alt="" width="1440" height="960" fetchpriority="high">
+  </picture>
+  <div class="wrap">
+    <div>
+      <img class="logo" src="media/logo.webp" alt="Moto Rush" width="450" height="311">
+      <h1><span class="en">Ride. Pick up. <span class="accent">Deliver.</span></span><span class="vi">Lái xe. Đón khách. <span class="accent">Giao đúng giờ.</span></span></h1>
+      <p class="sub"><span class="en">Weave your scooter through a sunny, Saigon-inspired city, pick up quirky regulars at the curb and drop them at famous landmarks before the timer runs out.</span><span class="vi">Lướt xe máy qua thành phố rực rỡ lấy cảm hứng từ Sài Gòn, đón những vị khách quen đáng yêu bên lề đường và trả khách tại các địa danh nổi tiếng trước khi hết giờ.</span></p>
+      <div class="soon">
+        <img src="media/icon-256.png" alt="" width="46" height="46">
+        <div><b><span class="en">Coming soon on the App Store</span><span class="vi">Sắp ra mắt trên App Store</span></b><small><span class="en">Moto Rush: City Rider Game · iPhone</span><span class="vi">Moto Rush: Tay Lái Phố · iPhone</span></small></div>
+      </div>
+      <div class="btns">
+        <a class="btn pink" href="#trailer"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7z"/></svg><span class="en">Watch the trailer</span><span class="vi">Xem trailer</span></a>
+        <a class="btn ghost" href="#features"><span class="en">Explore features</span><span class="vi">Khám phá tính năng</span></a>
+      </div>
+      <div class="chips">
+        <span class="chip"><span class="en">12 shifts · 3 districts</span><span class="vi">12 ca · 3 khu phố</span></span>
+        <span class="chip"><span class="en">6 regulars</span><span class="vi">6 khách quen</span></span>
+        <span class="chip"><span class="en">Rain &amp; rush hour</span><span class="vi">Mưa &amp; giờ cao điểm</span></span>
+        <span class="chip"><span class="en">10 languages</span><span class="vi">10 ngôn ngữ</span></span>
+      </div>
+    </div>
+    <div class="phone"><img src="media/shot2_rush.webp" alt="Gameplay: carrying a customer through rush hour in Thu Thiem" width="540" height="960"></div>
+  </div>
+</div>
+
+<section id="trailer" class="trailer">
+  <div class="wrap">
+    <div class="phone">
+      <video controls playsinline muted loop preload="metadata" poster="media/trailer_poster.jpg" width="540" height="960">
+        <source src="media/trailer.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div>
+      <span class="kicker"><span class="en">Gameplay trailer</span><span class="vi">Trailer gameplay</span></span>
+      <h2><span class="en">See Saigon from the saddle</span><span class="vi">Ngắm Sài Gòn từ yên xe</span></h2>
+      <p class="lead"><span class="en">Swipe to change lanes, dodge buses and street-food carts, and hit the glowing lane to pick up and drop off your customers.</span><span class="vi">Vuốt để đổi làn, né xe buýt và xe đẩy hàng rong, chạy vào làn phát sáng để đón và trả khách.</span></p>
+      <ul>
+        <li><span class="dot">1</span><span><span class="en"><b>Pick up</b> — a regular waves from the curb. Pull into the glowing lane beside them.</span><span class="vi"><b>Đón khách</b> — khách quen vẫy tay bên lề. Chạy vào làn phát sáng cạnh họ.</span></span></li>
+        <li><span class="dot">2</span><span><span class="en"><b>Ride</b> — beat the timer, grab coins and pull off close calls for bigger tips.</span><span class="vi"><b>Chở khách</b> — kịp giờ, nhặt xu và né sát nút để có thêm tiền boa.</span></span></li>
+        <li><span class="dot">3</span><span><span class="en"><b>Deliver</b> — drop off at Ben Thanh Market, the Central Post Office, Thu Thiem Bridge 2 and more.</span><span class="vi"><b>Trả khách</b> — tại Chợ Bến Thành, Bưu điện Thành phố, Cầu Thủ Thiêm 2 và nhiều nơi khác.</span></span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker"><span class="en">Features</span><span class="vi">Tính năng</span></span>
+      <h2><span class="en">A city full of stories</span><span class="vi">Thành phố đầy câu chuyện</span></h2>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <div class="ico i1"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5"/><circle cx="17" cy="9" r="2.4"/><path d="M15.5 14.2c2.4-.3 4.4 1.2 5 4.3"/></svg></div>
+        <h3><span class="en">Regulars with personality</span><span class="vi">Khách quen có cá tính</span></h3>
+        <p><span class="en">Six regulars, each with a trait that changes the ride: chatty riders tip more for close calls, people in a hurry pay bigger fares, fragile cargo hates bumps and snack lovers tip for coins.</span><span class="vi">Sáu khách quen, mỗi người một tính cách làm thay đổi chuyến đi: khách hay chuyện boa thêm khi né sát nút, khách đang vội trả cước cao hơn, hàng dễ vỡ sợ va chạm, khách mê ăn vặt boa theo số xu.</span></p>
+      </article>
+      <article class="card">
+        <div class="ico i2"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 15a4 4 0 1 1 .9-7.9A5.5 5.5 0 0 1 18.5 9 3 3 0 0 1 18 15z"/><path d="M8 18l-1 2.5M12 18l-1 2.5M16 18l-1 2.5"/></svg></div>
+        <h3><span class="en">Weather &amp; rush hour</span><span class="vi">Thời tiết &amp; giờ cao điểm</span></h3>
+        <p><span class="en">Every shift has its own conditions. Rain makes roads slippery and turns slower; rush hour brings heavy traffic and bigger fares.</span><span class="vi">Mỗi ca có điều kiện riêng. Trời mưa đường trơn, lách chậm hơn; giờ cao điểm xe đông nhưng cước cao hơn.</span></p>
+      </article>
+      <article class="card">
+        <div class="ico i3"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11A6.5 6.5 0 0 1 18.5 10c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></svg></div>
+        <h3><span class="en">12 shifts in 3 districts</span><span class="vi">12 ca chạy ở 3 khu phố</span></h3>
+        <p><span class="en">Earn up to three stars per shift to unlock the next district, from the old market streets to the four-lane riverside boulevards.</span><span class="vi">Mỗi ca đạt tối đa ba sao để mở khóa khu phố tiếp theo, từ phố chợ xưa đến đại lộ bốn làn ven sông.</span></p>
+        <div class="districts"><span>Bến Thành</span><span>Chợ Lớn</span><span>Thủ Thiêm</span></div>
+      </article>
+      <article class="card">
+        <div class="ico i4"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3.5 4 6l-1.5 5 3 1V21h13v-9l3-1L20 6l-4-2.5c-.6 1.6-2.2 2.6-4 2.6S8.6 5.1 8 3.5z"/></svg></div>
+        <h3><span class="en">Vietnamese courier outfits</span><span class="vi">Trang phục đậm chất Việt</span></h3>
+        <p><span class="en">Courier jackets, a Bà Ba shirt, a bat-wing raincoat and more. Each outfit has a perk, like +10% tips or no slipping in the rain. Plus bikes, paint skins and upgrades.</span><span class="vi">Áo shipper, áo bà ba, áo mưa cánh dơi và nhiều nữa. Mỗi bộ có lợi thế riêng như +10% tiền boa hay không trơn trượt khi mưa. Kèm xe, màu sơn và nâng cấp.</span></p>
+      </article>
+      <article class="card">
+        <div class="ico i5"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="9" width="17" height="11.5" rx="2"/><path d="M2.5 9h19M12 9v11.5M12 9c-1.5-3.8-6-4.2-6-1.6C6 9 9.5 9 12 9zm0 0c1.5-3.8 6-4.2 6-1.6C18 9 14.5 9 12 9z"/></svg></div>
+        <h3><span class="en">Daily rewards &amp; free Lucky Wheel</span><span class="vi">Thưởng ngày &amp; vòng quay miễn phí</span></h3>
+        <p><span class="en">A 7-day login streak, daily and weekly quests, badges, a Time Chest and a free Lucky Wheel. No betting, no purchase needed.</span><span class="vi">Chuỗi thưởng đăng nhập 7 ngày, nhiệm vụ ngày và tuần, huy hiệu, Rương giờ và Vòng quay miễn phí. Không cược, không cần mua.</span></p>
+      </article>
+      <article class="card">
+        <div class="ico i6"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.6 2.6 3.6 5.4 3.6 8.5s-1 5.9-3.6 8.5c-2.6-2.6-3.6-5.4-3.6-8.5s1-5.9 3.6-8.5z"/></svg></div>
+        <h3><span class="en">Play in 10 languages</span><span class="vi">Chơi bằng 10 ngôn ngữ</span></h3>
+        <p>English · Tiếng Việt · 简体中文 · Français · Deutsch · 日本語 · Português · Español · Italiano · العربية</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="regulars">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker"><span class="en">Meet the regulars</span><span class="vi">Làm quen khách quen</span></span>
+      <h2><span class="en">Six faces you will know by name</span><span class="vi">Sáu gương mặt bạn sẽ nhớ tên</span></h2>
+      <p class="lead"><span class="en">Give them rides to become friends and earn gem gifts along the way.</span><span class="vi">Chở họ nhiều chuyến để thân thiết hơn và nhận quà kim cương.</span></p>
+    </div>
+    <div class="regs">
+      <div class="reg" style="--c:#ff7aa8"><img src="media/reg_co_hai.webp" alt="Cô Hai" width="190" height="200" loading="lazy"><div><h3>Cô Hai</h3><span class="trait"><span class="en">Chatty · Tip grows with every close call</span><span class="vi">Hay chuyện · Tiền boa tăng mỗi lần né sát nút</span></span><p><span class="en">Sells flowers at the market and never stops chatting.</span><span class="vi">Bán hoa ở chợ và nói chuyện không ngừng nghỉ.</span></p></div></div>
+      <div class="reg" style="--c:#4cc9f0"><img src="media/reg_chu_ba.webp" alt="Chú Ba" width="194" height="200" loading="lazy"><div><h3>Chú Ba</h3><span class="trait"><span class="en">In a hurry · Short timer, bigger fare</span><span class="vi">Đang vội · Ít thời gian, cước cao hơn</span></span><p><span class="en">Drives the night shift and is always late for something.</span><span class="vi">Chạy ca đêm và lúc nào cũng trễ một việc gì đó.</span></p></div></div>
+      <div class="reg" style="--c:#b08cff"><img src="media/reg_ba_tam.webp" alt="Bà Tám" width="197" height="200" loading="lazy"><div><h3>Bà Tám</h3><span class="trait"><span class="en">Fragile cargo · Every bump cuts the tip</span><span class="vi">Hàng dễ vỡ · Mỗi cú va chạm trừ tiền boa</span></span><p><span class="en">Carries her famous steamed cakes. Handle with care!</span><span class="vi">Mang mẻ bánh bèo nổi tiếng của bà. Chạy nhẹ tay nhé!</span></p></div></div>
+      <div class="reg" style="--c:#ffb347"><img src="media/reg_bao.webp" alt="Bảo" width="188" height="200" loading="lazy"><div><h3>Bảo</h3><span class="trait"><span class="en">Snack lover · Tip grows with coins collected</span><span class="vi">Mê ăn vặt · Tiền boa tăng theo số xu nhặt được</span></span><p><span class="en">A student who rates every street snack in the city.</span><span class="vi">Sinh viên chuyên chấm điểm mọi món ăn vặt ngoài phố.</span></p></div></div>
+      <div class="reg" style="--c:#7be495"><img src="media/reg_linh.webp" alt="Linh" width="185" height="200" loading="lazy"><div><h3>Linh</h3><span class="trait"><span class="en">In a hurry · Short timer, bigger fare</span><span class="vi">Đang vội · Ít thời gian, cước cao hơn</span></span><p><span class="en">A nurse rushing to her shift at the hospital.</span><span class="vi">Y tá đang vội đến ca trực ở bệnh viện.</span></p></div></div>
+      <div class="reg" style="--c:#ff6b4a"><img src="media/reg_anh_tuan.webp" alt="Anh Tuấn" width="194" height="200" loading="lazy"><div><h3>Anh Tuấn</h3><span class="trait"><span class="en">Chatty · Tip grows with every close call</span><span class="vi">Hay chuyện · Tiền boa tăng mỗi lần né sát nút</span></span><p><span class="en">A street photographer with a story for every corner.</span><span class="vi">Nhiếp ảnh gia đường phố, góc phố nào cũng có chuyện kể.</span></p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="screens">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker"><span class="en">Screenshots</span><span class="vi">Hình ảnh</span></span>
+      <h2><span class="en">Take a look around</span><span class="vi">Dạo một vòng</span></h2>
+    </div>
+    <div class="shots">
+      <figure><img src="media/shot1_pickup.webp" alt="Picking up a customer in Ben Thanh" width="540" height="960" loading="lazy"><figcaption><span class="en">Pick up customers at the curb</span><span class="vi">Đón khách bên lề đường</span></figcaption></figure>
+      <figure><img src="media/shot2_rush.webp" alt="Rush hour delivery in Thu Thiem" width="540" height="960" loading="lazy"><figcaption><span class="en">Rush hour in Thu Thiem</span><span class="vi">Giờ cao điểm ở Thủ Thiêm</span></figcaption></figure>
+      <figure><img src="media/shot3_regulars.webp" alt="Regulars list with traits" width="540" height="960" loading="lazy"><figcaption><span class="en">Get to know the regulars</span><span class="vi">Làm quen khách quen</span></figcaption></figure>
+      <figure><img src="media/shot4_outfits.webp" alt="Outfits shop" width="540" height="960" loading="lazy"><figcaption><span class="en">Outfits with perks</span><span class="vi">Trang phục có lợi thế</span></figcaption></figure>
+      <figure><img src="media/shot5_wheel.webp" alt="Free Lucky Wheel" width="540" height="960" loading="lazy"><figcaption><span class="en">Free Lucky Wheel</span><span class="vi">Vòng quay miễn phí</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="download">
+  <div class="wrap">
+    <div class="box">
+      <img src="media/icon-256.png" alt="Moto Rush app icon" width="120" height="120" loading="lazy">
+      <div>
+        <h2><span class="en">Coming soon on the App Store</span><span class="vi">Sắp ra mắt trên App Store</span></h2>
+        <p><span class="en">Moto Rush: City Rider Game is getting ready for iPhone. Free to play; contains ads and optional in-app purchases.</span><span class="vi">Moto Rush: Tay Lái Phố đang chuẩn bị ra mắt trên iPhone. Chơi miễn phí; có quảng cáo và mua hàng trong ứng dụng (tùy chọn).</span></p>
+        <p><span class="en">Questions or feedback? Write to</span><span class="vi">Câu hỏi hoặc góp ý? Gửi email tới</span> <a href="mailto:dolotech.vn@gmail.com">dolotech.vn@gmail.com</a></p>
+      </div>
+    </div>
+    <p class="fine"><span class="en">Moto Rush is an original game; it is not affiliated with any real ride-hailing or delivery service.</span><span class="vi">Moto Rush là trò chơi nguyên bản, không liên kết với bất kỳ dịch vụ gọi xe hay giao hàng nào.</span></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Dolotech · <a href="mailto:dolotech.vn@gmail.com">dolotech.vn@gmail.com</a></span>
+    <nav aria-label="Legal">
+      <a href="privacy.html"><span class="en">Privacy Policy</span><span class="vi">Chính sách quyền riêng tư</span></a>
+      <a href="terms.html"><span class="en">Terms of Use</span><span class="vi">Điều khoản sử dụng</span></a>
+      <a href="support.html"><span class="en">Support</span><span class="vi">Hỗ trợ</span></a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var titles = {
+    en: "Moto Rush: City Rider Game — Ride. Pick up. Deliver.",
+    vi: "Moto Rush: Tay Lái Phố — Lái xe. Đón khách. Giao đúng giờ."
+  };
+  function setLang(l) {
+    if (l !== "vi") l = "en";
+    root.setAttribute("data-lang", l);
+    root.lang = l;
+    document.title = titles[l];
+    var b = document.querySelectorAll("[data-set-lang]");
+    for (var i = 0; i < b.length; i++) b[i].setAttribute("aria-pressed", b[i].getAttribute("data-set-lang") === l ? "true" : "false");
+    try { localStorage.setItem("motorush_lang", l); } catch (e) {}
+  }
+  var saved = null;
+  try { saved = localStorage.getItem("motorush_lang"); } catch (e) {}
+  var hash = (location.hash || "").toLowerCase();
+  var nav = (navigator.language || "").toLowerCase();
+  setLang(hash === "#vi" ? "vi" : hash === "#en" ? "en" : saved || (nav.indexOf("vi") === 0 ? "vi" : "en"));
+  document.addEventListener("click", function (e) {
+    var t = e.target.closest ? e.target.closest("[data-set-lang]") : null;
+    if (t) setLang(t.getAttribute("data-set-lang"));
+  });
+})();
+</script>
+</body>
+</html>
