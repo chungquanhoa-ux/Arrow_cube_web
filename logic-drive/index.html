@@ -3,16 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Logic Drive: Conveyor Jam - Cute parking jam puzzle</title>
-<meta name="description" content="Logic Drive: Conveyor Jam is a cute 3D parking puzzle. Tap cars out of a jammed lot and match them with the passengers on the conveyor belt. By Dolotech Technology Company Limited.">
-<meta property="og:title" content="Logic Drive: Conveyor Jam">
-<meta property="og:description" content="Tap the cars, match the passengers and clear the parking jam! Free to play, no account needed.">
-<meta property="og:image" content="img/shot1.jpg">
+<title>Logic Drive: Road Link - Rotate roads, bring cars home</title>
+<meta name="description" content="Logic Drive: Road Link is a cozy road-rotation puzzle with a story. Rotate road tiles so every car reaches the home of its color, and help Roley rebuild Roadville. By Dolotech Technology Company Limited.">
+<meta property="og:title" content="Logic Drive: Road Link">
+<meta property="og:description" content="Rotate the roads, bring every car home! A cozy story puzzle with 100+ levels. Free to play, no account needed.">
+<meta property="og:image" content="https://dolotech.vn/logic-drive/img/og.jpg">
 <link rel="icon" href="img/icon.png">
+<link rel="apple-touch-icon" href="img/icon.png">
 <link rel="stylesheet" href="style.css">
 <style>
-.hero{max-width:960px;margin:0 auto;padding:44px 20px 8px;display:grid;grid-template-columns:auto 1fr;gap:22px 26px;align-items:center}
+.hero{max-width:960px;margin:0 auto;padding:44px 20px 8px;display:grid;grid-template-columns:auto 1fr auto;gap:22px 26px;align-items:center}
 .hero img.icon{width:112px;height:112px;border-radius:25px;border:1px solid var(--edge);box-shadow:0 10px 40px rgba(31,111,235,.25)}
+.hero img.mascot{width:150px;height:auto}
 .hero h1{font-size:40px;margin:0 0 6px}
 .hero .tag{color:var(--cyan);margin:0 0 4px;font-size:18px}
 .hero p.by{margin:0;color:var(--muted);font-size:14px}
@@ -26,18 +28,20 @@
 .grid .card{margin:0}
 .grid h3{margin:0 0 4px;color:var(--text);font-size:16px}
 .grid p{margin:0;font-size:15px}
+@media(max-width:700px){.hero{grid-template-columns:auto 1fr}.hero img.mascot{display:none}}
 @media(max-width:560px){.hero{grid-template-columns:1fr;text-align:left}.hero h1{font-size:32px}.shots img{height:360px}}
 </style>
 </head>
 <body>
 <section class="hero">
-  <img class="icon" src="img/icon.png" alt="Logic Drive: Conveyor Jam icon" width="112" height="112">
+  <img class="icon" src="img/icon.png" alt="Logic Drive: Road Link icon" width="112" height="112">
   <div>
     <p class="brand">Dolotech Technology Company Limited</p>
-    <h1>Logic Drive: Conveyor Jam</h1>
-    <p class="tag">Clear the parking jam, one car at a time.</p>
-    <p class="by">Free to play. No account needed.</p>
+    <h1>Logic Drive: Road Link</h1>
+    <p class="tag">Rotate the roads, bring every car home.</p>
+    <p class="by">Free to play. No account needed. Plays offline.</p>
   </div>
+  <img class="mascot" src="img/roley.png" alt="Roley, the little road fixer" width="150">
 </section>
 <div class="cta">
   <a class="btn" href="https://apps.apple.com/app/id6832603616">Download on the App Store</a>
@@ -46,25 +50,27 @@
 </div>
 
 <div class="shots" aria-label="Screenshots">
-  <img src="img/shot1.jpg" alt="Cars parked in a messy lot while passengers ride the conveyor belt" loading="lazy">
-  <img src="img/shot2.jpg" alt="Ice cars and a rainbow bus in a later level" loading="lazy">
-  <img src="img/shot3.jpg" alt="Unlock more parking slots with an optional ad or with coins" loading="lazy">
-  <img src="img/shot4.jpg" alt="A timed Rush level with a countdown" loading="lazy">
+  <img src="img/shot1.jpg" alt="Title screen with Roley the road fixer" loading="lazy">
+  <img src="img/shot2.jpg" alt="Rotate road tiles to link a car with its home" loading="lazy">
+  <img src="img/shot3.jpg" alt="More colors: roads of different colors must never touch" loading="lazy">
+  <img src="img/shot4.jpg" alt="Every road is linked and the cars drive home" loading="lazy">
+  <img src="img/shot5.jpg" alt="Level complete with stars and coins" loading="lazy">
+  <img src="img/shot6.jpg" alt="Roley tells the story of Roadville" loading="lazy">
 </div>
 
 <main class="wrap">
-  <h2>The lot is jammed. The passengers are waiting.</h2>
-  <p>Tap a car that has a clear way out and it drives along the arrow on its roof into a parking slot. Passengers ride around the conveyor belt; when one passes a parked car of the same color, they hop in. Fill every seat and the car drives away. Clear the whole lot to win.</p>
+  <h2>A storm tangled every road in Roadville.</h2>
+  <p>Roley the little road fixer needs your help! Tap a road tile to rotate it a quarter turn and build a clear path from each car to the home of the same color. Link them all and the cars roll home. But careful: roads of different colors must never touch, and padlocked tiles can't be turned.</p>
 
   <div class="grid">
-    <div class="card"><h3>Endless levels</h3><p>New colors and trickier lots as you go, with a fresh theme every few levels.</p></div>
-    <div class="card"><h3>Ice cars, rainbow buses, Rush</h3><p>Ice cars need two taps, rainbow buses take any passenger and Rush levels race the clock.</p></div>
-    <div class="card"><h3>Boosters and rewards</h3><p>Earn stars and coins, claim a daily bonus and use Magnet or Rainbow when you are stuck.</p></div>
-    <div class="card"><h3>Play your way</h3><p>Four free parking slots, four more with an optional ad or coins. Works offline, no sign-in.</p></div>
+    <div class="card"><h3>100+ levels</h3><p>Boards grow bigger, with more colors and padlocks as you travel through Roadville.</p></div>
+    <div class="card"><h3>A cozy story</h3><p>Roley tells the story in four chapters: Sunny Meadow, Candy Hills, Night Harbor and Autumn Ridge.</p></div>
+    <div class="card"><h3>Stars, coins and hints</h3><p>Fewer taps earn more stars. Use coins for a hint when you're stuck and claim a daily bonus.</p></div>
+    <div class="card"><h3>Play your way</h3><p>Works offline with no sign-in. Optional ads only when you choose to watch one for bonus coins.</p></div>
   </div>
 
   <h2>Giới thiệu</h2>
-  <p>Logic Drive: Conveyor Jam là trò chơi giải đố bãi đỗ xe 3D dễ thương. Chạm vào xe có đường thoát để đưa xe vào ô đỗ, rồi để hành khách trên băng chuyền lên đúng xe cùng màu. Xe đủ khách sẽ chạy đi. Giải tỏa cả bãi để qua màn. Miễn phí, không cần tài khoản, chơi được khi không có mạng.</p>
+  <p>Logic Drive: Road Link là trò chơi giải đố xoay đường có cốt truyện. Một cơn bão đã làm rối tung mọi con đường ở thị trấn Roadville, và chú Roley cần bạn giúp. Chạm vào các mảnh đường để xoay, nối đường từ mỗi chiếc xe về ngôi nhà cùng màu. Đường khác màu không được chạm nhau, ô có ổ khóa thì không xoay được. Hơn 100 màn chơi, bốn chương truyện, miễn phí, không cần tài khoản và chơi được khi không có mạng.</p>
 </main>
 <footer>&copy; 2026 Dolotech Technology Company Limited &middot; <a href="support.html">Support</a> &middot; <a href="privacy.html">Privacy Policy</a></footer>
 </body>
