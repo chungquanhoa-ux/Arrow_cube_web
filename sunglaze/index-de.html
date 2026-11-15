@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sunglaze: Stained Glass Puzzle – ein entspannendes Offline-Puzzle</title>
+<meta name="description" content="Restauriere die Buntglasfenster von Saltglass Bay, indem du farbiges Glas übereinanderlegst und das Licht mischst. Entspannt, offline, ohne Zeitdruck. Für iPhone und iPad.">
+<meta name="theme-color" content="#22150e">
+<link rel="canonical" href="https://dolotech.vn/sunglaze/index-de.html">
+<link rel="alternate" hreflang="en" href="https://dolotech.vn/sunglaze/index.html"><link rel="alternate" hreflang="ja" href="https://dolotech.vn/sunglaze/index-ja.html"><link rel="alternate" hreflang="de" href="https://dolotech.vn/sunglaze/index-de.html"><link rel="alternate" hreflang="vi" href="https://dolotech.vn/sunglaze/index-vi.html"><link rel="alternate" hreflang="x-default" href="https://dolotech.vn/sunglaze/index.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg width='38' height='38' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 38V16a14 14 0 0 1 28 0v22Z' fill='%231a110c' stroke='%23120c09' stroke-width='2'/%3E%3Cpath d='M9 35V17a11 11 0 0 1 11-11v29Z' fill='%233A78D8' stroke='%23120c09' stroke-width='2'/%3E%3Cpath d='M20 6a11 11 0 0 1 11 11v18H20Z' fill='%23D8433F' stroke='%23120c09' stroke-width='2'/%3E%3Cpath d='M9 24h22v11H9Z' fill='%2334A65F' stroke='%23120c09' stroke-width='2'/%3E%3Ccircle cx='20' cy='17' r='5' fill='%23F5C542' stroke='%23120c09' stroke-width='2'/%3E%3Cpath d='M20 24v11' stroke='%23120c09' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&amp;family=Nunito:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+:root{--walnut:#22150e;--walnut2:#2f1e14;--walnut3:#3d281b;--lead:#120c09;--parch:#f7eedb;--parch2:#efe2c6;--ink:#2a1c13;--ink2:#5a4636;
+--gold:#F5C542;--sapphire:#3A78D8;--ruby:#D8433F;--emerald:#34A65F;--violet:#8350C8;--link:#1f4f9e;--radius:14px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;color:var(--parch);font-family:"Nunito",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic","Noto Sans JP",Meiryo,sans-serif;font-size:17px;line-height:1.65;
+background:var(--walnut);background-image:radial-gradient(ellipse at 15% -10%,rgba(245,197,66,.16),transparent 55%),radial-gradient(ellipse at 95% 10%,rgba(58,120,216,.14),transparent 50%),radial-gradient(ellipse at 50% 110%,rgba(131,80,200,.14),transparent 55%),repeating-linear-gradient(90deg,rgba(255,255,255,.012) 0 2px,transparent 2px 9px);min-height:100vh}
+h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;font-family:"Lora",Georgia,"Times New Roman","Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;line-height:1.25;font-weight:700}
+a{color:var(--gold)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:0;background:var(--gold);color:var(--lead);padding:.5rem 1rem;z-index:10;font-weight:700}
+.skip:focus{left:1rem;top:1rem}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+/* header */
+.site-head{background:linear-gradient(180deg,#1a100b,#22150e);border-bottom:4px solid var(--lead);box-shadow:0 2px 0 rgba(245,197,66,.25)}
+.head-in{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 20px;padding:14px 0}
+.brand{display:flex;align-items:center;gap:10px;color:var(--parch);text-decoration:none;font-family:"Lora",Georgia,serif;font-weight:700;font-size:1.25rem}
+.brand small{display:block;font-family:"Nunito",sans-serif;font-weight:600;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:#d9c7a6}
+.brand svg{flex:none}
+.navs{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px}
+nav.main ul,.langs ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+nav.main a{display:inline-block;padding:6px 12px;border-radius:999px;color:var(--parch);text-decoration:none;font-weight:700;font-size:.95rem;border:2px solid transparent}
+nav.main a:hover{border-color:rgba(245,197,66,.5)}
+nav.main a[aria-current=page]{background:var(--gold);color:var(--lead);border-color:var(--lead)}
+.langs a{display:inline-block;padding:3px 9px;border-radius:6px;color:#e8dcc4;text-decoration:none;font-size:.85rem;font-weight:700;border:2px solid #5a4030}
+.langs a:hover{border-color:var(--gold)}
+.langs a[aria-current=true]{background:var(--parch);color:var(--ink);border-color:var(--lead)}
+/* lead strip */
+.leadstrip{height:12px;background:linear-gradient(90deg,var(--ruby) 0 20%,var(--gold) 20% 40%,var(--emerald) 40% 60%,var(--sapphire) 60% 80%,var(--violet) 80% 100%);border-bottom:3px solid var(--lead);opacity:.9}
+/* hero */
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;padding:46px 0 30px}
+.hero h1{font-size:clamp(2rem,5vw,3.3rem);margin:.2em 0 .3em;color:#fff7e6;text-shadow:0 2px 0 var(--lead)}
+.hero .tag{font-size:1.15rem;color:#ecdfc6;max-width:34em}
+.eyebrow{display:inline-block;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.rosette{width:100%;max-width:420px;justify-self:center;filter:drop-shadow(0 0 30px rgba(245,197,66,.28))}
+.rosette .glow{animation:breathe 7s ease-in-out infinite;transform-origin:center}
+@keyframes breathe{0%,100%{opacity:.55}50%{opacity:.95}}
+.badges{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.badge{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border:3px solid var(--lead);border-radius:12px;background:var(--parch);color:var(--ink);font-weight:800;text-decoration:none;box-shadow:0 4px 0 var(--lead)}
+.badge span{display:block;font-weight:600;font-size:.78rem;color:var(--ink2)}
+.badge.alt{background:var(--walnut3);color:var(--parch)}
+.badge.alt span{color:#d6c4a4}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;padding:0;list-style:none}
+.chips li{font-size:.85rem;font-weight:700;padding:4px 10px;border-radius:999px;border:2px solid #5a4030;color:#efe2c6}
+/* cards */
+main{padding-bottom:40px}
+.card{background:var(--parch);color:var(--ink);border:4px solid var(--lead);border-radius:var(--radius);padding:28px clamp(18px,4vw,40px);margin:26px 0;box-shadow:0 6px 0 rgba(0,0,0,.35),inset 0 0 0 2px rgba(255,255,255,.5)}
+.card a{color:var(--link)}
+.card h1{font-size:clamp(1.8rem,4vw,2.5rem);margin:.1em 0 .3em}
+.card h2{font-size:1.35rem;margin:1.8em 0 .5em;padding-bottom:.25em;border-bottom:3px solid var(--parch2)}
+.card h2:first-child{margin-top:0}
+.card h3{font-size:1.1rem;margin:1.3em 0 .3em}
+.card ul{padding-left:1.25em}
+.card li{margin:.25em 0}
+.meta{color:var(--ink2);font-size:.95rem}
+.note{background:#fff8e6;border:3px solid var(--lead);border-left:12px solid var(--gold);border-radius:10px;padding:14px 18px;margin:18px 0}
+.note.blue{border-left-color:var(--sapphire)}
+.toc{columns:2 240px;column-gap:28px;padding-left:1.2em;margin:.6em 0}
+.toc li{break-inside:avoid}
+table{border-collapse:collapse;width:100%;margin:12px 0;font-size:.95rem}
+th,td{border:2px solid var(--lead);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--parch2)}
+.tablewrap{overflow-x:auto}
+/* features */
+.section-title{font-size:clamp(1.5rem,3.5vw,2.1rem);color:#fff7e6;margin:34px 0 6px;text-align:center}
+.section-sub{text-align:center;color:#e2d4ba;margin:0 auto 10px;max-width:40em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin:22px 0}
+.tile{background:var(--parch);color:var(--ink);border:4px solid var(--lead);border-radius:var(--radius);padding:20px;position:relative;overflow:hidden;box-shadow:0 5px 0 rgba(0,0,0,.35)}
+.tile::before{content:"";position:absolute;inset:0 0 auto 0;height:10px;background:var(--c,var(--gold));border-bottom:3px solid var(--lead)}
+.tile h3{margin:.5em 0 .3em;font-size:1.15rem}
+.tile p{margin:0;color:#3d2c20}
+.mix{display:grid;grid-template-columns:minmax(200px,320px) 1fr;gap:26px;align-items:center}
+.mix ul{list-style:none;padding:0;margin:0}
+.mix li{display:flex;align-items:center;gap:10px;margin:8px 0;font-weight:700}
+.sw{display:inline-block;width:26px;height:26px;border:3px solid var(--lead);border-radius:6px;flex:none}
+.bld{columns:2 220px;column-gap:24px;padding-left:1.2em}
+.pill{display:inline-block;padding:2px 10px;border-radius:999px;border:2px solid var(--lead);background:#fff3cf;font-size:.85rem;font-weight:800}
+/* faq */
+details{border:3px solid var(--lead);border-radius:10px;margin:10px 0;background:#fffaf0}
+summary{cursor:pointer;padding:12px 16px;font-weight:800;list-style:none;position:relative;padding-right:44px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:16px;top:8px;font-size:1.4rem;color:var(--ruby)}
+details[open] summary::after{content:"–"}
+details[open] summary{border-bottom:2px dashed #cdb894}
+details .a{padding:4px 18px 12px}
+.btn{display:inline-block;background:var(--sapphire);color:#fff!important;text-decoration:none;font-weight:800;padding:12px 20px;border:3px solid var(--lead);border-radius:12px;box-shadow:0 4px 0 var(--lead)}
+.btn:hover{background:#2f66bd}
+code{background:var(--parch2);padding:1px 6px;border-radius:4px;font-size:.92em}
+/* footer */
+.site-foot{background:#160d08;border-top:4px solid var(--lead);color:#d9c9ab;padding:26px 0 32px;font-size:.93rem}
+.foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px}
+.site-foot a{color:var(--gold)}
+.site-foot ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:14px}
+@media (max-width:760px){.hero{grid-template-columns:1fr;padding-top:28px;text-align:left}.rosette{max-width:250px;order:-1}.mix{grid-template-columns:1fr}.mix svg{max-width:260px;margin:0 auto;display:block}}
+@media (max-width:420px){body{font-size:16px}.card h1{font-size:1.6rem}.wrap{padding:0 14px}.card{padding:20px 16px;border-width:3px}nav.main a{padding:5px 9px;font-size:.9rem}.brand{font-size:1.1rem}}
+</style>
+</head>
+<body>
+<a class="skip" href="#content">Zum Inhalt springen</a>
+<header class="site-head">
+<div class="wrap head-in">
+<a class="brand" href="index-de.html"><svg width="38" height="38" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M6 38V16a14 14 0 0 1 28 0v22Z" fill="#1a110c" stroke="#120c09" stroke-width="2"/><path d="M9 35V17a11 11 0 0 1 11-11v29Z" fill="#3A78D8" stroke="#120c09" stroke-width="2"/><path d="M20 6a11 11 0 0 1 11 11v18H20Z" fill="#D8433F" stroke="#120c09" stroke-width="2"/><path d="M9 24h22v11H9Z" fill="#34A65F" stroke="#120c09" stroke-width="2"/><circle cx="20" cy="17" r="5" fill="#F5C542" stroke="#120c09" stroke-width="2"/><path d="M20 24v11" stroke="#120c09" stroke-width="2"/></svg><span>Sunglaze<small>Buntglas-Puzzle</small></span></a>
+<div class="navs">
+<nav class="main" aria-label="Hauptnavigation"><ul><li><a href="index-de.html" aria-current="page">Start</a></li><li><a href="privacy-de.html">Datenschutz</a></li><li><a href="terms-de.html">Nutzungsbedingungen</a></li><li><a href="support-de.html">Support</a></li></ul></nav>
+<nav class="langs" aria-label="Sprache"><ul><li><a href="index.html" hreflang="en" lang="en">EN</a></li><li><a href="index-ja.html" hreflang="ja" lang="ja">日本語</a></li><li><a href="index-de.html" hreflang="de" lang="de" aria-current="true">DE</a></li><li><a href="index-vi.html" hreflang="vi" lang="vi">VI</a></li></ul></nav>
+</div>
+</div>
+</header>
+<div class="leadstrip" aria-hidden="true"></div>
+<main id="content" class="wrap">
+
+<section class="hero" aria-labelledby="hero-title">
+<div>
+<span class="eyebrow">Ein entspannendes Lichtmisch-Puzzle</span>
+<h1 id="hero-title">Sunglaze: Stained Glass Puzzle</h1>
+<p class="tag">Willkommen in Saltglass Bay, einer ruhigen Stadt am Meer, deren bunte Fenster ihren Glanz verloren haben. Lege durchsichtiges Farbglas übereinander, lass die Farben sich mischen – und sieh zu, wie das Sonnenlicht wieder hereinströmt.</p>
+<div class="badges">
+<span class="badge">iOS<span>iPhone, iPad &amp; iPhone Duo</span></span>
+<span class="badge alt">Android<span>Folgt später</span></span>
+</div>
+<ul class="chips" aria-label="Highlights">
+<li>Komplett offline</li><li>Kein Zeitdruck</li><li>Du kannst nicht verlieren</li><li>Ab 4 Jahren</li><li>10 Sprachen</li>
+</ul>
+</div>
+<svg class="rosette" viewBox="0 0 400 400" width="420" height="420" role="img" aria-label="Eine runde Buntglas-Rosette aus rotem, goldenem, grünem, blauem und violettem Glas mit schwarzen Bleiruten" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="rg" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#fff6d0" stop-opacity=".9"/><stop offset="1" stop-color="#F5C542" stop-opacity="0"/></radialGradient><linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/></linearGradient></defs><circle class="glow" cx="200" cy="200" r="198" fill="url(#rg)"/><circle cx="200" cy="200" r="186" fill="#1a110c" stroke="#120c09" stroke-width="8"/><path d="M350.0 200.0 L382.0 200.0 A182 182 0 0 1 368.1 269.6 L338.6 257.4 A150 150 0 0 0 350.0 200.0 Z" fill="#3A78D8" stroke="#120c09" stroke-width="5" stroke-linejoin="round"/><path d="M338.6 257.4 L368.1 269.6 A182 182 0 0 1 328.7 328.7 L306.1 306.1 A150 150 0 0 0 338.6 257.4 Z" fill="#8350C8" stroke="#120c09" stroke-width="5" stroke-linejoin="round"/><path d="M306.1 306.1 L328.7 328.7 A182 182 0 0 1 269.6 368.1 L257.4 338.6 A150 150 0 0 0 306.1 306.1 Z" fill="#34A65F" stroke="#120c09" stroke-width="5" stroke-linejoin="round"/><path d="M257.4 338.6 L269.6 368.1 A182 182 0 0 1 200.0 382.0 L200.0 350.0 A150 150 0 0 0 257.4 338.6 Z" fill="#D8433F" stroke="#120c09" stroke-width="5" stroke-linejoin="round"/><path d="M200.0 350.0 L200.0 382.0 A182 182 0 0 1 130.4 368.1 L142.6 338.6 A150 150 0 0 0 200.0 350.0 Z" fill="#3A78D8" stroke="#120c09" stroke-width="5" stroke-linejoin="round"/><path d="M142.6 338.6 L130.4 368.1 A182 182 0 0 1 71.3 328.7 L93.9 306.1 A150 150 0 0 0 142.6 338.6 Z" fill="#8350C8" stroke="#120c09" stroke-width="5" stroke-linejoin="round"/><path d="M93.9 306.1 L71.3 328.7 A182 182 0 0 1 31.9 269.6 L61.4 257.4 A150 150 0 0 0 93.9 306.1 Z" fill="#34A65F" stroke="#120c09" stroke-width="5" stroke-linejoin="round"/><path d="M61.4 257.4 L31.9 269.6 A182 182 0 0 1 18.0 200.0 L50.0 200.0 A150 150 0 0 0 61.4 257.4 Z" fill="#D8433F" stroke="#120c09" stroke-width="5" stroke-linejoin="round"/><path d="M50.0 200.0 L18.0 200.0 A182 182 0 0 1 31.9 130.4 L61.4 142.6 A150 150 0 0 0 50.0 200.0 Z" fill="#3A78D8" stroke="#120c09" stroke-width="5" stroke-linejoin="round"/><path d="M61.4 142.6 L31.9 130.4 A182 182 0 0 1 71.3 71.3 L93.9 93.9 A150 150 0 0 0 61.4 142.6 Z" fill="#8350C8" stroke="#120c09" stroke-width="5" stroke-linejoin="round"/><path d="M93.9 93.9 L71.3 71.3 A182 182 0 0 1 130.4 31.9 L142.6 61.4 A150 150 0 0 0 93.9 93.9 Z" fill="#34A65F" stroke="#120c09" stroke-width="5" stroke-linejoin="round"/><path d="M142.6 61.4 L130.4 31.9 A182 182 0 0 1 200.0 18.0 L200.0 50.0 A150 150 0 0 0 142.6 61.4 Z" fill="#D8433F" stroke="#120c09" stroke-width="5" stroke-linejoin="round"/><path d="M200.0 50.0 L200.0 18.0 A182 182 0 0 1 269.6 31.9 L257.4 61.4 A150 150 0 0 0 200.0 50.0 Z" fill="#3A78D8" stroke="#120c09" stroke-width="5" stroke-linejoin="round"/><path d="M257.4 61.4 L269.6 31.9 A182 182 0 0 1 328.7 71.3 L306.1 93.9 A150 150 0 0 0 257.4 61.4 Z" fill="#8350C8" stroke="#120c09" stroke-width="5" stroke-linejoin="round"/><path d="M306.1 93.9 L328.7 71.3 A182 182 0 0 1 368.1 130.4 L338.6 142.6 A150 150 0 0 0 306.1 93.9 Z" fill="#34A65F" stroke="#120c09" stroke-width="5" stroke-linejoin="round"/><path d="M338.6 142.6 L368.1 130.4 A182 182 0 0 1 382.0 200.0 L350.0 200.0 A150 150 0 0 0 338.6 142.6 Z" fill="#D8433F" stroke="#120c09" stroke-width="5" stroke-linejoin="round"/><g transform="rotate(0.0 200 200)"><path d="M200 196 C226 160 230 92 200 54 C170 92 174 160 200 196 Z" fill="#D8433F" stroke="#120c09" stroke-width="5" stroke-linejoin="round"/><path d="M200 150 C210 130 212 100 200 80" fill="none" stroke="#120c09" stroke-width="3" stroke-linecap="round" opacity=".7"/></g><g transform="rotate(30.0 200 200)"><path d="M200 196 C226 160 230 92 200 54 C170 92 174 160 200 196 Z" fill="#3A78D8" stroke="#120c09" stroke-width="5" stroke-linejoin="round"/><path d="M200 150 C210 130 212 100 200 80" fill="none" stroke="#120c09" stroke-width="3" stroke-linecap="round" opacity=".7"/></g><g transform="rotate(60.0 200 200)"><path d="M200 196 C226 160 230 92 200 54 C170 92 174 160 200 196 Z" fill="#34A65F" stroke="#120c09" stroke-width="5" stroke-linejoin="round"/><path d="M200 150 C210 130 212 100 200 80" fill="none" stroke="#120c09" stroke-width="3" stroke-linecap="round" opacity=".7"/></g><g transform="rotate(90.0 200 200)"><path d="M200 196 C226 160 230 92 200 54 C170 92 174 160 200 196 Z" fill="#D8433F" stroke="#120c09" stroke-width="5" stroke-linejoin="round"/><path d="M200 150 C210 130 212 100 200 80" fill="none" stroke="#120c09" stroke-width="3" stroke-linecap="round" opacity=".7"/></g><g transform="rotate(120.0 200 200)"><path d="M200 196 C226 160 230 92 200 54 C170 92 174 160 200 196 Z" fill="#8350C8" stroke="#120c09" stroke-width="5" stroke-linejoin="round"/><path d="M200 150 C210 130 212 100 200 80" fill="none" stroke="#120c09" stroke-width="3" stroke-linecap="round" opacity=".7"/></g><g transform="rotate(150.0 200 200)"><path d="M200 196 C226 160 230 92 200 54 C170 92 174 160 200 196 Z" fill="#34A65F" stroke="#120c09" stroke-width="5" stroke-linejoin="round"/><path d="M200 150 C210 130 212 100 200 80" fill="none" stroke="#120c09" stroke-width="3" stroke-linecap="round" opacity=".7"/></g><g transform="rotate(180.0 200 200)"><path d="M200 196 C226 160 230 92 200 54 C170 92 174 160 200 196 Z" fill="#D8433F" stroke="#120c09" stroke-width="5" stroke-linejoin="round"/><path d="M200 150 C210 130 212 100 200 80" fill="none" stroke="#120c09" stroke-width="3" stroke-linecap="round" opacity=".7"/></g><g transform="rotate(210.0 200 200)"><path d="M200 196 C226 160 230 92 200 54 C170 92 174 160 200 196 Z" fill="#3A78D8" stroke="#120c09" stroke-width="5" stroke-linejoin="round"/><path d="M200 150 C210 130 212 100 200 80" fill="none" stroke="#120c09" stroke-width="3" stroke-linecap="round" opacity=".7"/></g><g transform="rotate(240.0 200 200)"><path d="M200 196 C226 160 230 92 200 54 C170 92 174 160 200 196 Z" fill="#34A65F" stroke="#120c09" stroke-width="5" stroke-linejoin="round"/><path d="M200 150 C210 130 212 100 200 80" fill="none" stroke="#120c09" stroke-width="3" stroke-linecap="round" opacity=".7"/></g><g transform="rotate(270.0 200 200)"><path d="M200 196 C226 160 230 92 200 54 C170 92 174 160 200 196 Z" fill="#D8433F" stroke="#120c09" stroke-width="5" stroke-linejoin="round"/><path d="M200 150 C210 130 212 100 200 80" fill="none" stroke="#120c09" stroke-width="3" stroke-linecap="round" opacity=".7"/></g><g transform="rotate(300.0 200 200)"><path d="M200 196 C226 160 230 92 200 54 C170 92 174 160 200 196 Z" fill="#8350C8" stroke="#120c09" stroke-width="5" stroke-linejoin="round"/><path d="M200 150 C210 130 212 100 200 80" fill="none" stroke="#120c09" stroke-width="3" stroke-linecap="round" opacity=".7"/></g><g transform="rotate(330.0 200 200)"><path d="M200 196 C226 160 230 92 200 54 C170 92 174 160 200 196 Z" fill="#34A65F" stroke="#120c09" stroke-width="5" stroke-linejoin="round"/><path d="M200 150 C210 130 212 100 200 80" fill="none" stroke="#120c09" stroke-width="3" stroke-linecap="round" opacity=".7"/></g><g transform="rotate(15.0 200 200)"><path d="M200 58 L212 84 L200 110 L188 84 Z" fill="#F5C542" stroke="#120c09" stroke-width="4" stroke-linejoin="round"/></g><g transform="rotate(45.0 200 200)"><path d="M200 58 L212 84 L200 110 L188 84 Z" fill="#F5C542" stroke="#120c09" stroke-width="4" stroke-linejoin="round"/></g><g transform="rotate(75.0 200 200)"><path d="M200 58 L212 84 L200 110 L188 84 Z" fill="#F5C542" stroke="#120c09" stroke-width="4" stroke-linejoin="round"/></g><g transform="rotate(105.0 200 200)"><path d="M200 58 L212 84 L200 110 L188 84 Z" fill="#F5C542" stroke="#120c09" stroke-width="4" stroke-linejoin="round"/></g><g transform="rotate(135.0 200 200)"><path d="M200 58 L212 84 L200 110 L188 84 Z" fill="#F5C542" stroke="#120c09" stroke-width="4" stroke-linejoin="round"/></g><g transform="rotate(165.0 200 200)"><path d="M200 58 L212 84 L200 110 L188 84 Z" fill="#F5C542" stroke="#120c09" stroke-width="4" stroke-linejoin="round"/></g><g transform="rotate(195.0 200 200)"><path d="M200 58 L212 84 L200 110 L188 84 Z" fill="#F5C542" stroke="#120c09" stroke-width="4" stroke-linejoin="round"/></g><g transform="rotate(225.0 200 200)"><path d="M200 58 L212 84 L200 110 L188 84 Z" fill="#F5C542" stroke="#120c09" stroke-width="4" stroke-linejoin="round"/></g><g transform="rotate(255.0 200 200)"><path d="M200 58 L212 84 L200 110 L188 84 Z" fill="#F5C542" stroke="#120c09" stroke-width="4" stroke-linejoin="round"/></g><g transform="rotate(285.0 200 200)"><path d="M200 58 L212 84 L200 110 L188 84 Z" fill="#F5C542" stroke="#120c09" stroke-width="4" stroke-linejoin="round"/></g><g transform="rotate(315.0 200 200)"><path d="M200 58 L212 84 L200 110 L188 84 Z" fill="#F5C542" stroke="#120c09" stroke-width="4" stroke-linejoin="round"/></g><g transform="rotate(345.0 200 200)"><path d="M200 58 L212 84 L200 110 L188 84 Z" fill="#F5C542" stroke="#120c09" stroke-width="4" stroke-linejoin="round"/></g><g transform="rotate(30 200 200)"><ellipse cx="200" cy="168" rx="16" ry="30" fill="#8350C8" stroke="#120c09" stroke-width="5"/></g><g transform="rotate(90 200 200)"><ellipse cx="200" cy="168" rx="16" ry="30" fill="#34A65F" stroke="#120c09" stroke-width="5"/></g><g transform="rotate(150 200 200)"><ellipse cx="200" cy="168" rx="16" ry="30" fill="#D8433F" stroke="#120c09" stroke-width="5"/></g><g transform="rotate(210 200 200)"><ellipse cx="200" cy="168" rx="16" ry="30" fill="#8350C8" stroke="#120c09" stroke-width="5"/></g><g transform="rotate(270 200 200)"><ellipse cx="200" cy="168" rx="16" ry="30" fill="#34A65F" stroke="#120c09" stroke-width="5"/></g><g transform="rotate(330 200 200)"><ellipse cx="200" cy="168" rx="16" ry="30" fill="#D8433F" stroke="#120c09" stroke-width="5"/></g><circle cx="200" cy="200" r="24" fill="#F5C542" stroke="#120c09" stroke-width="6"/><circle cx="200" cy="200" r="9" fill="#fff4c9" stroke="#120c09" stroke-width="3"/><circle cx="200" cy="200" r="182" fill="url(#sheen)" pointer-events="none"/></svg>
+</section>
+
+<section class="card" aria-labelledby="how">
+<div class="mix">
+<svg viewBox="0 0 300 280" width="300" height="280" role="img" aria-label="Drei sich überlappende Glaskreise: Gelb und Blau ergeben Grün, Rot und Blau Violett, Rot und Gelb Orange" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="cY"><circle cx="112" cy="105" r="78"/></clipPath><clipPath id="cB"><circle cx="188" cy="105" r="78"/></clipPath><clipPath id="cR"><circle cx="150" cy="172" r="78"/></clipPath></defs><circle cx="112" cy="105" r="78" fill="#F5C542"/><circle cx="188" cy="105" r="78" fill="#3A78D8"/><circle cx="150" cy="172" r="78" fill="#D8433F"/><circle cx="188" cy="105" r="78" fill="#34A65F" clip-path="url(#cY)"/><circle cx="150" cy="172" r="78" fill="#8350C8" clip-path="url(#cB)"/><circle cx="150" cy="172" r="78" fill="#EE8A2E" clip-path="url(#cY)"/><g clip-path="url(#cB)"><circle cx="150" cy="172" r="78" fill="#5b3a28" clip-path="url(#cY)"/></g><g fill="none" stroke="#120c09" stroke-width="6"><circle cx="112" cy="105" r="78"/><circle cx="188" cy="105" r="78"/><circle cx="150" cy="172" r="78"/></g></svg>
+<div>
+<h2 id="how">Licht ist dein Pinsel</h2>
+<p>Jedes Fenster beginnt als zarte Vorzeichnung auf der Werkbank. Zieh Teile aus durchsichtigem Farbglas in den Rahmen und dreh sie, bis sie die Vorzeichnung bedecken. Wo sich Teile überlappen, mischt sich das Licht:</p>
+<ul>
+<li><span class="sw" style="background:#F5C542"></span>+<span class="sw" style="background:#3A78D8"></span>= <span class="sw" style="background:#34A65F"></span> Gelb + Blau = Grün</li>
+<li><span class="sw" style="background:#D8433F"></span>+<span class="sw" style="background:#3A78D8"></span>= <span class="sw" style="background:#8350C8"></span> Rot + Blau = Violett</li>
+<li><span class="sw" style="background:#D8433F"></span>+<span class="sw" style="background:#F5C542"></span>= <span class="sw" style="background:#EE8A2E"></span> Rot + Gelb = Orange</li>
+</ul>
+<p>Gib jedem Feld die Farbe, die es braucht – dann scheint die Sonne hindurch und taucht den Raum in Farbe.</p>
+</div>
+</div>
+</section>
+
+<h2 class="section-title">Für ruhige Momente gemacht</h2>
+<p class="section-sub">Kein Druck, kein Countdown – nur du, das Glas und das Licht.</p>
+<div class="grid">
+<div class="tile" style="--c:#F5C542"><h3>Über 300 Puzzles</h3><p>Jedes Fenster wird mit unserem Puzzle-Generator sorgfältig gestaltet und hat garantiert genau eine Lösung.</p></div>
+<div class="tile" style="--c:#3A78D8"><h3>Besondere Gläser</h3><p>Milchglas, geätztes, gesprungenes, Prismen-, Spiegel-, dichroitisches und Fusingglas – dazu antike Scheiben, die fest im Rahmen sitzen – sorgen für neue Kniffe.</p></div>
+<div class="tile" style="--c:#34A65F"><h3>Fenster des Tages</h3><p>Jeden Tag ein neues Fenster, für alle dasselbe, aus dem Datum erzeugt – sogar offline.</p></div>
+<div class="tile" style="--c:#D8433F"><h3>Feste im Jahreslauf</h3><p>Feiere die Jahreszeiten in Saltglass Bay mit besonderen Festfenstern.</p></div>
+<div class="tile" style="--c:#8350C8"><h3>Album bei Tag &amp; Nacht</h3><p>Jedes fertige Fenster landet in deinem Album – betrachte es bei Tageslicht oder im Lampenschein.</p></div>
+<div class="tile" style="--c:#F5C542"><h3>Schmücke die Stadt</h3><p>Sammle beim Spielen Lumen und schmücke damit die Gassen und Kais von Saltglass Bay.</p></div>
+</div>
+
+<section class="card" aria-labelledby="town">
+<h2 id="town">Zwölf Gebäude warten auf ihr Licht</h2>
+<p>Schlendere durch die Kopfsteinpflastergassen von Saltglass Bay und restauriere die Fenster von:</p>
+<ol class="bld">
+<li>Leuchtturmhäuschen</li><li>Glas-Wintergarten</li><li>Bahnhof am Meer</li><li>Altstadtbibliothek</li><li>Hafencafé</li><li>Laternen-Teehaus</li><li>Burgsaal im Norden</li><li>Blumenladen am Kai</li><li>Rathaus mit Uhrturm</li><li>Foyer des Opernhauses</li><li>Sternwarte auf dem Hügel</li><li>Grand Hotel am Meer</li>
+</ol>
+</section>
+
+<section class="card" aria-labelledby="everyone">
+<h2 id="everyone">Für alle Spielerinnen und Spieler</h2>
+<ul>
+<li><strong>Kein Zeitlimit, kein Verlieren.</strong> Lass dir so viel Zeit, wie du willst.</li>
+<li>Mach jeden Zug <strong>rückgängig</strong> und nutze <strong>Hinweise</strong>, die dir Schritt für Schritt weiterhelfen.</li>
+<li><strong>Farbsymbole</strong> auf jedem Glas helfen farbenblinden Spielerinnen und Spielern, die Farben zu unterscheiden.</li>
+<li><strong>Komplett offline spielbar.</strong> Kein Konto, kein Login – dein Fortschritt bleibt auf deinem Gerät.</li>
+<li><strong>In 10 Sprachen verfügbar.</strong></li>
+</ul>
+<p>Sunglaze ist kostenlos spielbar, mit optionaler Werbung und optionalen In-App-Käufen. Lies unsere <a href="privacy-de.html">Datenschutzerklärung</a> und die <a href="terms-de.html">Nutzungsbedingungen</a> oder schau beim <a href="support-de.html">Support</a> vorbei, wenn du Hilfe brauchst.</p>
+</section>
+
+</main>
+<footer class="site-foot">
+<div class="wrap foot-in">
+<div><strong>Sunglaze: Stained Glass Puzzle</strong><br>© 2026 DOLOTECH. Alle Rechte vorbehalten.<br>Kontakt: <a href="mailto:dolotech.vn@gmail.com">dolotech.vn@gmail.com</a></div>
+<nav aria-label="Fußzeile"><ul><li><a href="index-de.html">Start</a></li><li><a href="privacy-de.html">Datenschutz</a></li><li><a href="terms-de.html">Nutzungsbedingungen</a></li><li><a href="support-de.html">Support</a></li></ul></nav>
+</div>
+</footer>
+</body>
+</html>
