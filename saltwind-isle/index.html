@@ -11,7 +11,9 @@
 <link rel="canonical" href="https://dolotech.vn/saltwind-isle/index.html">
 <link rel="alternate" hreflang="en" href="https://dolotech.vn/saltwind-isle/index.html"><link rel="alternate" hreflang="vi" href="https://dolotech.vn/saltwind-isle/index-vi.html"><link rel="alternate" hreflang="x-default" href="https://dolotech.vn/saltwind-isle/index.html">
 <meta property="og:type" content="website"><meta property="og:title" content="Saltwind Isle: Cozy Life Sim – a cozy open-island game for iPhone, iPad and Android"><meta property="og:description" content="Explore a windswept island, ride horses, fish, help villagers and build a home of your own. Plays offline, no account. For iPhone, iPad and Android."><meta property="og:url" content="https://dolotech.vn/saltwind-isle/index.html"><meta property="og:locale" content="en_US"><meta property="og:site_name" content="Saltwind Isle">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3CclipPath id='swc'%3E%3Crect x='1.5' y='1.5' width='37' height='37' rx='10'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path='url(%23swc)'%3E%3Crect width='40' height='40' fill='%23dcecf1'/%3E%3Ccircle cx='31' cy='9' r='4' fill='%23f2bb5c'/%3E%3Cpath d='M0 30q5-3 10 0t10 0t10 0t10 0V40H0Z' fill='%232f7ea6'/%3E%3Cpath d='M7 31Q20 20 33 31Z' fill='%237da35a' stroke='%233a2a1d' stroke-width='1.6' stroke-linejoin='round'/%3E%3Cpath d='M17.6 27.5L18.7 16h2.6l1.1 11.5Z' fill='%23f6ead2' stroke='%233a2a1d' stroke-width='1.4' stroke-linejoin='round'/%3E%3Cpath d='M18 16.4Q20 12.6 22 16.4Z' fill='%23d9762f' stroke='%233a2a1d' stroke-width='1.4' stroke-linejoin='round'/%3E%3Cg transform='rotate(18 20 14.6)' stroke='%233a2a1d' stroke-width='1.1' stroke-linejoin='round'%3E%3Cpath d='M20 6.2V23M11.6 14.6H28.4' stroke-width='1.4'/%3E%3Crect x='20.4' y='6.6' width='2.6' height='6.4' fill='%23fffaf0'/%3E%3Crect x='17' y='16.2' width='2.6' height='6.4' fill='%23fffaf0'/%3E%3Crect x='12' y='11.6' width='6.4' height='2.6' fill='%23fffaf0'/%3E%3Crect x='21.6' y='15' width='6.4' height='2.6' fill='%23fffaf0'/%3E%3C/g%3E%3Ccircle cx='20' cy='14.6' r='1.3' fill='%233a2a1d'/%3E%3C/g%3E%3Crect x='1.5' y='1.5' width='37' height='37' rx='10' fill='none' stroke='%233a2a1d' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="media/icon.png">
+<link rel="apple-touch-icon" href="media/icon.png">
+<meta property="og:image" content="https://dolotech.vn/saltwind-isle/media/sakura_hill.jpg">
 <style>
 :root{--paper:#f7f0e1;--paper2:#efe3c9;--card:#fffaf0;--ink:#3a2a1d;--ink2:#6a5442;--line:#dccaa6;
 --roof:#d9762f;--roof-d:#a9521a;--sea:#2f7ea6;--sea-d:#1d5c7d;--leaf:#6f9a4e;--sand:#e8cf9a;--sun:#f2bb5c;--radius:16px}
@@ -107,7 +109,20 @@ details .a{padding:2px 18px 10px}
 .site-foot a:hover{color:#fff}
 .foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px 24px}
 .site-foot ul{gap:6px 16px}
-@media (max-width:760px){.hero{grid-template-columns:1fr;padding-top:26px;gap:18px}.scene{max-width:320px;order:-1}}
+/* media */
+.appicon{display:block;width:84px;height:84px;border-radius:20px;border:3px solid var(--ink);box-shadow:0 6px 14px -6px rgba(58,42,29,.45);margin:0 0 12px}
+.hero-shot{margin:0;justify-self:stretch}
+.hero-shot img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:22px;border:4px solid var(--ink);box-shadow:0 18px 34px -18px rgba(58,42,29,.55);background:var(--paper2)}
+.hero-shot figcaption{font-size:.85rem;color:var(--ink2);text-align:center;margin-top:8px}
+.trailer{margin:10px 0 6px}
+.trailer video{display:block;width:100%;height:auto;aspect-ratio:1280/590;border-radius:18px;border:4px solid var(--ink);background:#1d2a33}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin:22px 0 8px;padding:0;list-style:none}
+.gallery figure{margin:0;background:var(--card);border:2px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 2px 0 var(--line)}
+.gallery img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:var(--paper2)}
+.gallery figcaption{padding:10px 14px 12px;font-weight:700;font-size:.95rem;line-height:1.4}
+.gallery figcaption span{display:block;font-weight:500;color:var(--ink2);font-size:.88rem}
+.brand img{flex:none;border-radius:10px;border:2px solid var(--ink)}
+@media (max-width:760px){.hero{grid-template-columns:1fr;padding-top:26px;gap:18px}.scene{max-width:320px;order:-1}.hero-shot{order:-1}.appicon{width:64px;height:64px;border-radius:16px}}
 @media (max-width:420px){body{font-size:16px}.wrap{padding:0 14px}.card{padding:20px 16px}.card h1{font-size:1.6rem}nav.main a{padding:5px 9px;font-size:.9rem}.brand{font-size:1.08rem}}
 @media print{.site-head,.tide,.site-foot,.skip{display:none}body{background:#fff}.card{box-shadow:none;border:0}}
 </style>
@@ -116,7 +131,7 @@ details .a{padding:2px 18px 10px}
 <a class="skip" href="#content">Skip to content</a>
 <header class="site-head">
 <div class="wrap head-in">
-<a class="brand" href="index.html"><svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><defs><clipPath id="swc"><rect x="1.5" y="1.5" width="37" height="37" rx="10"/></clipPath></defs><g clip-path="url(#swc)"><rect width="40" height="40" fill="#dcecf1"/><circle cx="31" cy="9" r="4" fill="#f2bb5c"/><path d="M0 30q5-3 10 0t10 0t10 0t10 0V40H0Z" fill="#2f7ea6"/><path d="M7 31Q20 20 33 31Z" fill="#7da35a" stroke="#3a2a1d" stroke-width="1.6" stroke-linejoin="round"/><path d="M17.6 27.5L18.7 16h2.6l1.1 11.5Z" fill="#f6ead2" stroke="#3a2a1d" stroke-width="1.4" stroke-linejoin="round"/><path d="M18 16.4Q20 12.6 22 16.4Z" fill="#d9762f" stroke="#3a2a1d" stroke-width="1.4" stroke-linejoin="round"/><g transform="rotate(18 20 14.6)" stroke="#3a2a1d" stroke-width="1.1" stroke-linejoin="round"><path d="M20 6.2V23M11.6 14.6H28.4" stroke-width="1.4"/><rect x="20.4" y="6.6" width="2.6" height="6.4" fill="#fffaf0"/><rect x="17" y="16.2" width="2.6" height="6.4" fill="#fffaf0"/><rect x="12" y="11.6" width="6.4" height="2.6" fill="#fffaf0"/><rect x="21.6" y="15" width="6.4" height="2.6" fill="#fffaf0"/></g><circle cx="20" cy="14.6" r="1.3" fill="#3a2a1d"/></g><rect x="1.5" y="1.5" width="37" height="37" rx="10" fill="none" stroke="#3a2a1d" stroke-width="2"/></svg><span>Saltwind Isle<small>Cozy Life Sim</small></span></a>
+<a class="brand" href="index.html"><img src="media/icon.png" width="40" height="40" alt=""><span>Saltwind Isle<small>Cozy Life Sim</small></span></a>
 <div class="navs">
 <nav class="main" aria-label="Main navigation"><ul><li><a href="index.html" aria-current="page">Home</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li><li><a href="support.html">Support</a></li></ul></nav>
 <nav class="langs" aria-label="Language"><ul><li><a href="index.html" hreflang="en" lang="en" aria-current="true" title="English">EN</a></li><li><a href="index-vi.html" hreflang="vi" lang="vi" title="Tiếng Việt">VI</a></li></ul></nav>
@@ -128,7 +143,7 @@ details .a{padding:2px 18px 10px}
 
 <section class="hero" aria-labelledby="hero-title">
 <div>
-<span class="eyebrow">A cozy open-island life sim</span>
+<img class="appicon" src="media/icon.png" width="84" height="84" alt="Saltwind Isle app icon"><span class="eyebrow">A cozy open-island life sim</span>
 <h1 id="hero-title">Saltwind Isle: Cozy Life Sim</h1>
 <p class="tag">Step off the ferry onto a small island where the wind is different every day. Wander the meadows, ride along the shore, fish off the pier, help your neighbours and make a little home your own – at your own pace.</p>
 <div class="badges">
@@ -140,44 +155,9 @@ details .a{padding:2px 18px 10px}
 <li>Plays offline</li><li>No account</li><li>Day &amp; night</li><li>Rated 4+ on the App Store</li><li>10 languages</li>
 </ul>
 </div>
-<svg class="scene" viewBox="0 0 400 300" role="img" aria-labelledby="scene-t">
-<title id="scene-t">Illustration: a small windmill with a terracotta roof on a green island in a blue sea</title>
-<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe5ee"/><stop offset="1" stop-color="#fbeed6"/></linearGradient>
-<clipPath id="frame"><rect x="4" y="4" width="392" height="292" rx="28"/></clipPath></defs>
-<g clip-path="url(#frame)">
-<rect width="400" height="300" fill="url(#sky)"/>
-<circle cx="322" cy="70" r="28" fill="#f2bb5c"/>
-<path d="M52 86q10-18 28-10q9-15 27-5q17-2 17 15Z" fill="#fffaf0"/>
-<path d="M262 120q8-12 21-7q8-10 21-2q12 0 12 9Z" fill="#fffaf0" opacity=".85"/>
-<path d="M96 122q6-6 12 0q6-6 12 0M128 106q5-5 10 0q5-5 10 0" fill="none" stroke="#3a2a1d" stroke-width="2.2" stroke-linecap="round"/>
-<path d="M236 208q36-28 84-9q30-13 84 4V214H236Z" fill="#9dbfa0"/>
-<rect y="206" width="400" height="94" fill="#2f7ea6"/>
-<path d="M20 236q10-5 20 0M84 252q10-5 20 0M300 238q10-5 20 0M150 270q10-5 20 0M250 282q10-5 20 0M30 280q10-5 20 0M356 266q10-5 20 0" fill="none" stroke="#bfe0ec" stroke-width="2.5" stroke-linecap="round"/>
-<ellipse cx="200" cy="222" rx="146" ry="11" fill="#e8cf9a" stroke="#3a2a1d" stroke-width="3"/>
-<path d="M70 221Q118 150 205 150Q292 150 330 221Z" fill="#7da35a" stroke="#3a2a1d" stroke-width="3" stroke-linejoin="round"/>
-<path d="M104 204h34v-17h-34Z" fill="#f6ead2" stroke="#3a2a1d" stroke-width="2.5" stroke-linejoin="round"/>
-<path d="M100 188l21-15l21 15Z" fill="#d9762f" stroke="#3a2a1d" stroke-width="2.5" stroke-linejoin="round"/>
-<path d="M117 204v-9h8v9" fill="#6a5442"/>
-<path d="M262 206h26v-13h-26Z" fill="#f6ead2" stroke="#3a2a1d" stroke-width="2.5" stroke-linejoin="round"/>
-<path d="M259 194l16-12l16 12Z" fill="#d9762f" stroke="#3a2a1d" stroke-width="2.5" stroke-linejoin="round"/>
-<path d="M186 196L194 112H216L224 196Z" fill="#f6ead2" stroke="#3a2a1d" stroke-width="3" stroke-linejoin="round"/>
-<path d="M199 196v-14a6 6 0 0 1 12 0v14" fill="#6a5442"/>
-<circle cx="205" cy="140" r="4.5" fill="#2f7ea6" stroke="#3a2a1d" stroke-width="2"/>
-<path d="M189 115Q205 92 221 115Z" fill="#d9762f" stroke="#3a2a1d" stroke-width="3" stroke-linejoin="round"/>
-<g class="blades" stroke="#3a2a1d" stroke-linejoin="round">
-<path d="M205 48V168M145 108H265" stroke-width="4" stroke-linecap="round"/>
-<rect x="208" y="52" width="14" height="46" fill="#fffaf0" stroke-width="2.5"/>
-<rect x="188" y="118" width="14" height="46" fill="#fffaf0" stroke-width="2.5"/>
-<rect x="149" y="111" width="46" height="14" fill="#fffaf0" stroke-width="2.5"/>
-<rect x="215" y="91" width="46" height="14" fill="#fffaf0" stroke-width="2.5"/>
-</g>
-<circle cx="205" cy="108" r="6" fill="#3a2a1d"/>
-<g class="boat"><path d="M300 254h46l-8 11h-30Z" fill="#a9521a" stroke="#3a2a1d" stroke-width="2.5" stroke-linejoin="round"/>
-<path d="M322 254V220" stroke="#3a2a1d" stroke-width="2.5"/><path d="M324 222l18 28h-18Z" fill="#fffaf0" stroke="#3a2a1d" stroke-width="2.5" stroke-linejoin="round"/></g>
-</g>
-<rect x="4" y="4" width="392" height="292" rx="28" fill="none" stroke="#3a2a1d" stroke-width="4"/>
-</svg>
+<figure class="hero-shot"><img src="media/sakura_hill.jpg" width="1280" height="720" alt="Saltwind Isle gameplay: an islander on a meadow of silver grass with pink cherry trees and the sea behind" fetchpriority="high"><figcaption>Real in-game screenshot</figcaption></figure>
 </section>
+<section class="card" aria-labelledby="trailer-t"><h2 id="trailer-t">Watch the trailer</h2><p class="meta">25 seconds of island life, captured in the game (no sound).</p><div class="trailer"><video controls autoplay muted loop playsinline preload="metadata" poster="media/trailer_poster.jpg" width="1280" height="590"><source src="media/trailer.mp4" type="video/mp4">Your browser cannot play this video.</video></div></section>
 
 <h2 class="section-title">Island life, one breeze at a time</h2>
 <p class="section-sub">No timers to beat and nothing lost while you are away – just the island, the wind and the people who live there.</p>
@@ -192,6 +172,7 @@ details .a{padding:2px 18px 10px}
 <div class="tile" style="--c:#d9762f"><h3>Raise a flag</h3><p>Fly the island's own flag from the flagpole, or unlock flags from around the world.</p></div>
 </div>
 
+<h2 class="section-title">A look around the island</h2><p class="section-sub">All images are real screenshots from the game.</p><ul class="gallery"><li><figure><img src="media/horse.jpg" width="1280" height="720" alt="Ride your horse: Gallop across open meadows" loading="lazy" decoding="async"><figcaption>Ride your horse<span>Gallop across open meadows</span></figcaption></figure></li><li><figure><img src="media/pier.jpg" width="1280" height="720" alt="Fishing pier: Cast a line where the ferry comes in" loading="lazy" decoding="async"><figcaption>Fishing pier<span>Cast a line where the ferry comes in</span></figcaption></figure></li><li><figure><img src="media/jvillage_sakura.jpg" width="1280" height="720" alt="Japanese-style village: Blossoms, a garden pond and a timber house" loading="lazy" decoding="async"><figcaption>Japanese-style village<span>Blossoms, a garden pond and a timber house</span></figcaption></figure></li><li><figure><img src="media/lighthouse.jpg" width="1280" height="720" alt="Path to the lighthouse: Wander the coast at your own pace" loading="lazy" decoding="async"><figcaption>Path to the lighthouse<span>Wander the coast at your own pace</span></figcaption></figure></li><li><figure><img src="media/home.jpg" width="1280" height="720" alt="A home of your own: Start with a cosy cabin and grow it" loading="lazy" decoding="async"><figcaption>A home of your own<span>Start with a cosy cabin and grow it</span></figcaption></figure></li><li><figure><img src="media/home_inside.jpg" width="1280" height="720" alt="Furnish every room: Arrange furniture and decorations" loading="lazy" decoding="async"><figcaption>Furnish every room<span>Arrange furniture and decorations</span></figcaption></figure></li><li><figure><img src="media/fishing_dawn.jpg" width="1280" height="720" alt="Fishing village at dawn: Fish drying racks by the shore" loading="lazy" decoding="async"><figcaption>Fishing village at dawn<span>Fish drying racks by the shore</span></figcaption></figure></li><li><figure><img src="media/night_village.jpg" width="1280" height="720" alt="Village at night: Warm windows when the sun goes down" loading="lazy" decoding="async"><figcaption>Village at night<span>Warm windows when the sun goes down</span></figcaption></figure></li><li><figure><img src="media/night_fireflies.jpg" width="1280" height="720" alt="Firefly nights: Starlight and fireflies over the meadow" loading="lazy" decoding="async"><figcaption>Firefly nights<span>Starlight and fireflies over the meadow</span></figcaption></figure></li></ul>
 <section class="card" aria-labelledby="langs">
 <h2 id="langs">Play in your language</h2>
 <p>Saltwind Isle is available in ten languages, and can follow your device's language automatically:</p>
