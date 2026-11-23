@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lodestar: Galactic Fleet War – space fleet combat for Android, iPhone and iPad</title>
+<meta name="description" content="Command the mothership Lodestar and the Wick fighter, switch any time, across 14 missions from Mars to Ashfold. No energy timers, no loot boxes. Coming soon to Google Play and the App Store.">
+<meta name="theme-color" content="#060a1c">
+<meta name="color-scheme" content="dark">
+<meta name="format-detection" content="telephone=no">
+<meta name="referrer" content="no-referrer">
+<link rel="canonical" href="https://dolotech.vn/lodestar/index.html">
+<link rel="alternate" hreflang="en" href="https://dolotech.vn/lodestar/index.html"><link rel="alternate" hreflang="vi" href="https://dolotech.vn/lodestar/index-vi.html"><link rel="alternate" hreflang="x-default" href="https://dolotech.vn/lodestar/index.html">
+<meta property="og:type" content="website"><meta property="og:title" content="Lodestar: Galactic Fleet War – space fleet combat for Android, iPhone and iPad"><meta property="og:description" content="Command the mothership Lodestar and the Wick fighter, switch any time, across 14 missions from Mars to Ashfold. No energy timers, no loot boxes. Coming soon to Google Play and the App Store."><meta property="og:url" content="https://dolotech.vn/lodestar/index.html"><meta property="og:locale" content="en_US"><meta property="og:site_name" content="Lodestar: Galactic Fleet War">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='lsb' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232a1d6b'/%3E%3Cstop offset='1' stop-color='%23060a1c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='1.5' y='1.5' width='37' height='37' rx='10' fill='url(%23lsb)' stroke='%2338e1ff' stroke-width='1.6'/%3E%3Ccircle cx='10' cy='11' r='.9' fill='%23fff'/%3E%3Ccircle cx='31' cy='30' r='.8' fill='%23fff'/%3E%3Ccircle cx='30' cy='9' r='.6' fill='%23fff'/%3E%3Cellipse cx='20' cy='20' rx='14.5' ry='5.2' fill='none' stroke='%2338e1ff' stroke-width='1.3' stroke-opacity='.8' transform='rotate(-22 20 20)'/%3E%3Cpath d='M20 5.5L22.5 17.5L34.5 20L22.5 22.5L20 34.5L17.5 22.5L5.5 20L17.5 17.5Z' fill='%23ffb347'/%3E%3Ccircle cx='20' cy='20' r='2.6' fill='%23fff4dc'/%3E%3C/svg%3E">
+<style>
+:root{--bg:#060a1c;--bg2:#0b1230;--card:#0f1739;--card2:#16204a;--ink:#e9eeff;--ink2:#b0bbdf;--line:#29387a;
+--cyan:#38e1ff;--link:#86ecff;--amber:#ffb347;--amber2:#ffc978;--violet:#9b6cff;--radius:16px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;font-size:17px;line-height:1.65;
+background-color:var(--bg);
+background-image:radial-gradient(1px 1px at 22px 34px,rgba(255,255,255,.7),transparent 1.5px),radial-gradient(1px 1px at 140px 90px,rgba(255,255,255,.45),transparent 1.5px),radial-gradient(1.4px 1.4px at 210px 170px,rgba(134,236,255,.55),transparent 2px),radial-gradient(1px 1px at 70px 200px,rgba(255,255,255,.4),transparent 1.5px),radial-gradient(1.2px 1.2px at 250px 40px,rgba(255,201,120,.5),transparent 2px),
+radial-gradient(ellipse at 85% -10%,rgba(155,108,255,.22),transparent 55%),radial-gradient(ellipse at 0% 10%,rgba(56,225,255,.12),transparent 45%),radial-gradient(ellipse at 50% 115%,rgba(255,179,71,.10),transparent 55%);
+background-size:280px 240px,280px 240px,280px 240px,280px 240px,280px 240px,auto,auto,auto;min-height:100vh}
+h1,h2,h3{font-family:"Avenir Next","Avenir","Segoe UI","Trebuchet MS",-apple-system,BlinkMacSystemFont,Roboto,Arial,sans-serif;line-height:1.25;font-weight:700;color:#fff;overflow-wrap:break-word;letter-spacing:.01em}
+p,li,td,th,summary{overflow-wrap:break-word}
+a{color:var(--link);text-underline-offset:2px}
+a:hover{color:var(--amber2)}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:0;background:var(--amber);color:#1a0f00;padding:.5rem 1rem;z-index:10;font-weight:700;border-radius:0 0 8px 0}
+.skip:focus{left:0;color:#1a0f00}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+/* header */
+.site-head{background:rgba(8,12,34,.88);border-bottom:1px solid var(--line)}
+.head-in{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 20px;padding:12px 0}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-family:"Avenir Next","Avenir","Segoe UI",Arial,sans-serif;font-weight:700;font-size:1.24rem;line-height:1.15;letter-spacing:.06em;text-transform:uppercase}
+.brand:hover{color:#fff}
+.brand small{display:block;font-weight:600;font-size:.7rem;letter-spacing:.16em;color:var(--cyan)}
+.brand svg{flex:none}
+.navs{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px}
+nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px}
+nav.main a{display:inline-block;padding:6px 12px;border-radius:999px;color:var(--ink);text-decoration:none;font-weight:650;font-size:.95rem;border:1px solid transparent}
+nav.main a:hover{border-color:var(--line);color:#fff}
+nav.main a[aria-current=page]{background:var(--cyan);color:#03121f}
+.langs a{display:inline-block;min-width:40px;text-align:center;padding:4px 9px;border-radius:8px;color:var(--ink2);text-decoration:none;font-size:.85rem;font-weight:700;border:1px solid var(--line)}
+.langs a:hover{border-color:var(--amber);color:#fff}
+.langs a[aria-current=true]{background:var(--amber);border-color:var(--amber);color:#1a0f00}
+.beam{height:3px;background:linear-gradient(90deg,transparent,var(--cyan) 20%,var(--violet) 55%,var(--amber) 85%,transparent)}
+/* hero */
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center;padding:44px 0 26px}
+.hero h1{font-size:clamp(2rem,5vw,3.05rem);margin:.15em 0 .3em}
+.hero .tag{font-size:1.14rem;color:var(--ink2);max-width:33em;margin:0}
+.eyebrow{display:inline-block;font-size:.8rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--amber)}
+.scene{width:100%;max-width:460px;height:auto;justify-self:center;filter:drop-shadow(0 12px 26px rgba(56,225,255,.18))}
+.scene .tw{animation:tw 3.2s ease-in-out infinite}
+.scene .wick{animation:bob 4s ease-in-out infinite}
+@keyframes tw{0%,100%{opacity:.25}50%{opacity:1}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.badge{display:inline-block;padding:9px 16px;border:1px solid var(--line);border-radius:12px;background:var(--card);font-weight:800;line-height:1.3;color:#fff}
+.badge span{display:block;font-weight:600;font-size:.8rem;color:var(--ink2)}
+.badge.soon{border-color:var(--cyan)}
+.badge.soon span{color:var(--link)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0;padding:0;list-style:none}
+.chips li{font-size:.86rem;font-weight:700;padding:3px 11px;border-radius:999px;background:var(--card2);border:1px solid var(--line)}
+/* cards */
+main{padding-bottom:44px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px clamp(18px,4vw,42px);margin:24px 0;box-shadow:0 0 0 1px rgba(56,225,255,.05),0 16px 34px -20px rgba(0,0,0,.8)}
+.card h1{font-size:clamp(1.8rem,4vw,2.4rem);margin:.1em 0 .25em}
+.card h2{font-size:1.3rem;margin:1.8em 0 .5em;padding-bottom:.3em;border-bottom:1px dashed var(--line)}
+.card h2:first-child{margin-top:0}
+.card h3{font-size:1.08rem;margin:1.3em 0 .3em;color:var(--amber2)}
+.card ul,.card ol{padding-left:1.3em}
+.card li{margin:.28em 0}
+.meta{color:var(--ink2);font-size:.95rem}
+.note{background:#151a44;border:1px solid var(--line);border-left:6px solid var(--amber);border-radius:12px;padding:14px 18px;margin:18px 0}
+.note.cyan{border-left-color:var(--cyan);background:#0f1e42}
+.note h2{border:0;margin:0 0 .3em;padding:0;font-size:1.12rem}
+.toc{columns:2 250px;column-gap:28px;padding-left:1.4em;margin:.6em 0}
+.toc li{break-inside:avoid}
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;min-width:520px;margin:12px 0;font-size:.94rem}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--card2);color:#fff}
+code{background:#0a1030;color:var(--amber2);padding:1px 6px;border-radius:5px;font-size:.9em;overflow-wrap:anywhere}
+.ui{font-weight:700;color:#fff}
+/* features */
+.section-title{font-size:clamp(1.5rem,3.4vw,2rem);margin:36px 0 4px;text-align:center}
+.section-sub{text-align:center;color:var(--ink2);margin:0 auto 6px;max-width:40em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(228px,1fr));gap:16px;margin:22px 0}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px 20px;border-top:4px solid var(--c,var(--cyan))}
+.tile h3{margin:.1em 0 .35em;font-size:1.1rem}
+.tile p{margin:0;color:var(--ink2)}
+.langlist{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0!important;margin:12px 0}
+.langlist li{margin:0;padding:3px 12px;border-radius:999px;border:1px solid var(--line);background:var(--bg2)}
+/* faq */
+details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background:var(--bg2)}
+summary{cursor:pointer;padding:12px 46px 12px 16px;font-weight:750;list-style:none;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:16px;top:7px;font-size:1.45rem;line-height:1.4;color:var(--amber)}
+details[open] summary::after{content:"\2013"}
+details[open] summary{border-bottom:1px dashed var(--line)}
+details .a{padding:2px 18px 10px}
+.btn{display:inline-block;background:var(--amber);color:#1a0f00;text-decoration:none;font-weight:800;padding:12px 20px;border-radius:12px;border:1px solid var(--amber2)}
+.btn:hover{background:var(--amber2);color:#1a0f00}
+/* footer */
+.site-foot{background:#03060f;border-top:1px solid var(--line);color:var(--ink2);padding:26px 0 32px;font-size:.93rem}
+.site-foot strong{color:#fff}
+.site-foot a{color:var(--link)}
+.site-foot a:hover{color:var(--amber2)}
+.foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px 24px}
+.site-foot ul{gap:6px 16px}
+@media (max-width:760px){.hero{grid-template-columns:1fr;padding-top:26px;gap:18px}.scene{max-width:340px;order:-1}}
+@media (max-width:420px){body{font-size:16px}.wrap{padding:0 14px}.card{padding:20px 16px}.card h1{font-size:1.6rem}nav.main a{padding:5px 9px;font-size:.9rem}.brand{font-size:1.08rem}}
+@media print{.site-head,.beam,.site-foot,.skip{display:none}body{background:#fff;color:#000}.card{box-shadow:none;border:0;background:#fff}h1,h2,h3,.ui,th{color:#000}a{color:#000}.meta,.tile p{color:#333}th{background:#eee}code{background:#eee;color:#000}.note{background:#fff}}
+</style>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="site-head">
+<div class="wrap head-in">
+<a class="brand" href="index.html"><svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><defs><linearGradient id="lsb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a1d6b"/><stop offset="1" stop-color="#060a1c"/></linearGradient></defs><rect x="1.5" y="1.5" width="37" height="37" rx="10" fill="url(#lsb)" stroke="#38e1ff" stroke-width="1.6"/><circle cx="10" cy="11" r=".9" fill="#fff"/><circle cx="31" cy="30" r=".8" fill="#fff"/><circle cx="30" cy="9" r=".6" fill="#fff"/><ellipse cx="20" cy="20" rx="14.5" ry="5.2" fill="none" stroke="#38e1ff" stroke-width="1.3" stroke-opacity=".8" transform="rotate(-22 20 20)"/><path d="M20 5.5L22.5 17.5L34.5 20L22.5 22.5L20 34.5L17.5 22.5L5.5 20L17.5 17.5Z" fill="#ffb347"/><circle cx="20" cy="20" r="2.6" fill="#fff4dc"/></svg><span>Lodestar<small>Galactic Fleet War</small></span></a>
+<div class="navs">
+<nav class="main" aria-label="Main navigation"><ul><li><a href="index.html" aria-current="page">Home</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li><li><a href="support.html">Support</a></li></ul></nav>
+<nav class="langs" aria-label="Language"><ul><li><a href="index.html" hreflang="en" lang="en" aria-current="true" title="English">EN</a></li><li><a href="index-vi.html" hreflang="vi" lang="vi" title="Tiếng Việt">VI</a></li></ul></nav>
+</div>
+</div>
+</header>
+<div class="beam" aria-hidden="true"></div>
+<main id="content" class="wrap">
+
+<section class="hero" aria-labelledby="hero-title">
+<div>
+<span class="eyebrow">Single-player space fleet combat</span>
+<h1 id="hero-title">Lodestar: Galactic Fleet War</h1>
+<p class="tag">Humanity's last fleet is running out of stars. You are Captain Noor Calder, commander of the mothership Lodestar – and the Ilume carriers are coming.</p>
+<div class="badges">
+<span class="badge soon">Google Play<span>Android · coming soon</span></span>
+<span class="badge soon">App Store<span>iPhone &amp; iPad · coming soon</span></span>
+<span class="badge">Free to play<span>Optional ads &amp; purchases</span></span>
+</div>
+<ul class="chips" aria-label="Highlights">
+<li>Single-player</li><li>No account</li><li>No energy timers</li><li>No loot boxes</li><li>10 languages</li><li>For ages 13+</li>
+</ul>
+</div>
+<svg class="scene" viewBox="0 0 400 300" role="img" aria-labelledby="scene-t">
+<title id="scene-t">Illustration: the mothership Lodestar fires its Lance cannon at an alien carrier above a ringed planet, while a Wick fighter launches missiles</title>
+<defs>
+<radialGradient id="ls-sky" cx="28%" cy="22%" r="95%"><stop offset="0" stop-color="#2d1d68"/><stop offset=".55" stop-color="#0d1338"/><stop offset="1" stop-color="#04071a"/></radialGradient>
+<radialGradient id="ls-planet" cx="32%" cy="28%" r="78%"><stop offset="0" stop-color="#ffd08c"/><stop offset=".42" stop-color="#d9662d"/><stop offset="1" stop-color="#3b1430"/></radialGradient>
+<linearGradient id="ls-hull" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dbe5fb"/><stop offset=".55" stop-color="#8b9bc4"/><stop offset="1" stop-color="#46557f"/></linearGradient>
+<linearGradient id="ls-plume" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#7ff0ff"/><stop offset="1" stop-color="#38e1ff" stop-opacity="0"/></linearGradient>
+<clipPath id="ls-frame"><rect x="4" y="4" width="392" height="292" rx="24"/></clipPath>
+</defs>
+<g clip-path="url(#ls-frame)">
+<rect width="400" height="300" fill="url(#ls-sky)"/>
+<ellipse cx="300" cy="62" rx="150" ry="46" fill="#8a46c8" opacity=".17"/>
+<ellipse cx="80" cy="238" rx="130" ry="40" fill="#1f9bc2" opacity=".13"/>
+<g><circle class="tw" cx="376.0" cy="142.2" r="1.0" fill="#fff" style="animation-delay:2.3s"/><circle cx="322.2" cy="293.4" r="1.2" fill="#fff" opacity="0.96"/><circle cx="370.9" cy="221.1" r="1.5" fill="#fff" opacity="0.38"/><circle cx="33.8" cy="194.6" r="1.0" fill="#fff" opacity="0.53"/><circle cx="192.1" cy="104.2" r="1.0" fill="#fff" opacity="0.39"/><circle cx="291.1" cy="268.6" r="0.6" fill="#fff" opacity="0.35"/><circle class="tw" cx="343.2" cy="211.4" r="1.5" fill="#fff" style="animation-delay:1.7s"/><circle cx="210.2" cy="89.2" r="1.5" fill="#fff" opacity="0.66"/><circle cx="322.9" cy="166.7" r="0.8" fill="#fff" opacity="0.67"/><circle cx="363.6" cy="125.6" r="0.6" fill="#fff" opacity="0.55"/><circle cx="106.7" cy="50.5" r="1.0" fill="#fff" opacity="0.77"/><circle cx="153.5" cy="255.8" r="0.7" fill="#fff" opacity="0.56"/><circle class="tw" cx="323.1" cy="148.1" r="1.2" fill="#fff" style="animation-delay:0.5s"/><circle cx="211.3" cy="182.9" r="0.5" fill="#fff" opacity="0.76"/><circle cx="160.6" cy="251.9" r="0.7" fill="#fff" opacity="0.87"/><circle cx="73.4" cy="129.5" r="1.0" fill="#fff" opacity="1.0"/><circle cx="215.1" cy="53.8" r="1.5" fill="#fff" opacity="0.6"/><circle cx="274.5" cy="91.0" r="1.0" fill="#fff" opacity="0.49"/><circle class="tw" cx="355.6" cy="173.9" r="1.5" fill="#fff" style="animation-delay:1.2s"/><circle cx="290.1" cy="169.6" r="0.6" fill="#fff" opacity="0.43"/><circle cx="55.8" cy="225.5" r="0.8" fill="#fff" opacity="0.8"/><circle cx="85.5" cy="242.8" r="1.0" fill="#fff" opacity="0.87"/><circle cx="62.1" cy="279.0" r="1.5" fill="#fff" opacity="0.5"/><circle cx="279.8" cy="100.0" r="1.5" fill="#fff" opacity="0.99"/><circle class="tw" cx="345.8" cy="75.7" r="0.6" fill="#fff" style="animation-delay:3.7s"/><circle cx="352.9" cy="253.5" r="1.0" fill="#fff" opacity="0.72"/><circle cx="210.2" cy="160.0" r="0.5" fill="#fff" opacity="0.59"/><circle cx="246.7" cy="139.5" r="0.7" fill="#fff" opacity="0.98"/><circle cx="344.1" cy="119.1" r="1.5" fill="#fff" opacity="0.99"/><circle cx="68.5" cy="289.3" r="0.7" fill="#fff" opacity="0.55"/><circle class="tw" cx="57.5" cy="121.3" r="0.6" fill="#fff" style="animation-delay:1.0s"/><circle cx="137.5" cy="68.5" r="0.7" fill="#fff" opacity="0.45"/><circle cx="285.5" cy="27.0" r="1.5" fill="#fff" opacity="0.75"/><circle cx="304.6" cy="185.2" r="0.7" fill="#fff" opacity="0.74"/><circle cx="113.2" cy="139.0" r="1.0" fill="#fff" opacity="0.67"/><circle cx="356.0" cy="57.4" r="1.0" fill="#fff" opacity="0.45"/><circle class="tw" cx="297.8" cy="204.0" r="0.6" fill="#fff" style="animation-delay:2.4s"/><circle cx="293.1" cy="292.4" r="0.5" fill="#fff" opacity="0.6"/><circle cx="196.6" cy="152.7" r="0.5" fill="#fff" opacity="0.93"/><circle cx="136.0" cy="237.1" r="1.5" fill="#fff" opacity="0.79"/><circle cx="133.1" cy="98.5" r="0.6" fill="#fff" opacity="0.62"/><circle cx="266.1" cy="173.1" r="0.5" fill="#fff" opacity="0.58"/><circle class="tw" cx="383.7" cy="53.0" r="0.8" fill="#fff" style="animation-delay:1.8s"/><circle cx="118.4" cy="127.2" r="0.8" fill="#fff" opacity="0.39"/><circle cx="319.0" cy="243.9" r="1.2" fill="#fff" opacity="0.38"/><circle cx="240.6" cy="112.9" r="1.0" fill="#fff" opacity="0.49"/><circle cx="131.2" cy="96.4" r="0.7" fill="#fff" opacity="0.59"/><circle cx="211.7" cy="37.0" r="1.5" fill="#fff" opacity="0.78"/><circle class="tw" cx="68.2" cy="244.8" r="1.0" fill="#fff" style="animation-delay:3.1s"/><circle cx="234.5" cy="46.1" r="1.2" fill="#fff" opacity="1.0"/><circle cx="326.8" cy="31.4" r="1.5" fill="#fff" opacity="1.0"/><circle cx="341.1" cy="215.4" r="1.0" fill="#fff" opacity="0.7"/><circle cx="201.1" cy="67.0" r="0.8" fill="#fff" opacity="0.69"/><circle cx="67.9" cy="71.0" r="0.5" fill="#fff" opacity="0.83"/><circle class="tw" cx="180.4" cy="166.7" r="1.2" fill="#fff" style="animation-delay:3.9s"/><circle cx="120.1" cy="188.4" r="1.0" fill="#fff" opacity="0.83"/><circle cx="89.6" cy="169.3" r="1.0" fill="#fff" opacity="0.39"/><circle cx="27.6" cy="34.9" r="0.8" fill="#fff" opacity="0.99"/><circle cx="119.4" cy="292.2" r="1.0" fill="#fff" opacity="0.37"/><circle cx="157.4" cy="283.9" r="0.7" fill="#fff" opacity="0.64"/><circle class="tw" cx="327.1" cy="17.4" r="1.2" fill="#fff" style="animation-delay:3.8s"/><circle cx="17.3" cy="181.6" r="0.8" fill="#fff" opacity="0.96"/><circle cx="185.9" cy="12.8" r="1.0" fill="#fff" opacity="0.84"/><circle cx="75.2" cy="94.5" r="0.8" fill="#fff" opacity="0.56"/><circle cx="266.1" cy="107.7" r="0.7" fill="#fff" opacity="0.8"/><circle cx="119.4" cy="225.9" r="0.8" fill="#fff" opacity="0.7"/><circle class="tw" cx="207.6" cy="160.0" r="1.2" fill="#fff" style="animation-delay:3.7s"/><circle cx="98.3" cy="276.8" r="1.0" fill="#fff" opacity="0.77"/><circle cx="60.7" cy="56.8" r="1.5" fill="#fff" opacity="0.65"/><circle cx="154.5" cy="151.7" r="0.8" fill="#fff" opacity="0.57"/><circle cx="306.2" cy="92.8" r="1.0" fill="#fff" opacity="0.56"/><circle cx="208.3" cy="253.9" r="1.0" fill="#fff" opacity="0.83"/><circle class="tw" cx="176.7" cy="69.7" r="0.5" fill="#fff" style="animation-delay:2.7s"/><circle cx="148.4" cy="282.4" r="0.6" fill="#fff" opacity="0.71"/><circle cx="137.5" cy="123.9" r="1.2" fill="#fff" opacity="0.37"/><circle cx="285.4" cy="93.6" r="0.7" fill="#fff" opacity="0.6"/><circle cx="206.9" cy="112.1" r="1.2" fill="#fff" opacity="0.64"/><circle cx="165.5" cy="67.2" r="1.2" fill="#fff" opacity="0.87"/></g>
+<circle cx="338" cy="262" r="96" fill="url(#ls-planet)"/>
+<ellipse cx="338" cy="262" rx="156" ry="25" fill="none" stroke="#ffd9a0" stroke-opacity=".5" stroke-width="3" transform="rotate(-13 338 262)"/>
+<path d="M292 88L344 72L374 92L346 112L292 100Z" fill="#33205f" stroke="#b07cff" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M304 94L332 84L350 92L332 102Z" fill="#4b2d86"/>
+<circle cx="334" cy="92" r="4.2" fill="#e4c4ff"/>
+<path d="M235 146L304 96" stroke="#ffb347" stroke-opacity=".28" stroke-width="9" stroke-linecap="round"/>
+<path d="M235 146L304 96" stroke="#ffe2a8" stroke-width="2.6" stroke-linecap="round"/>
+<circle cx="304" cy="96" r="7" fill="#ffd27a" opacity=".85"/>
+<path d="M44 140Q8 150 44 160Z" fill="url(#ls-plume)" opacity=".9"/>
+<path d="M44 145Q-6 150 44 155Z" fill="#c9f8ff" opacity=".7"/>
+<path d="M46 150L78 135L192 131L236 146L192 161L78 165Z" fill="url(#ls-hull)" stroke="#eef3ff" stroke-opacity=".55" stroke-width="1.2" stroke-linejoin="round"/>
+<path d="M118 131L127 118L151 118L158 131Z" fill="#aebde2" stroke="#eef3ff" stroke-opacity=".5" stroke-width="1"/>
+<rect x="131" y="121" width="16" height="3" rx="1.5" fill="#7ff0ff"/>
+<path d="M78 150H200" stroke="#38e1ff" stroke-opacity=".55" stroke-width="1.2"/>
+<circle cx="96" cy="139" r="2.4" fill="#2c3963"/><circle cx="174" cy="137" r="2.4" fill="#2c3963"/><circle cx="110" cy="161" r="2.4" fill="#2c3963"/>
+<g class="wick">
+<path d="M122 214Q100 214 70 216" stroke="#38e1ff" stroke-opacity=".7" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M168 213L146 205L138 213L146 221Z" fill="#eef3ff" stroke="#38e1ff" stroke-width="1.2" stroke-linejoin="round"/>
+<path d="M146 205L140 198L144 207ZM146 221L140 228L144 219Z" fill="#aebde2"/>
+<circle cx="137" cy="213" r="2.6" fill="#7ff0ff"/>
+</g>
+<path d="M170 210Q210 196 244 206" stroke="#ffb347" stroke-width="1.3" fill="none" stroke-dasharray="3 3"/>
+<path d="M170 216Q214 226 262 228" stroke="#ffb347" stroke-width="1.3" fill="none" stroke-dasharray="3 3"/>
+<path d="M248 200L260 206L248 212Z" fill="#9b6cff"/>
+<path d="M266 222L278 228L266 234Z" fill="#9b6cff"/>
+</g>
+<rect x="4" y="4" width="392" height="292" rx="24" fill="none" stroke="#38e1ff" stroke-opacity=".55" stroke-width="2"/>
+</svg>
+</section>
+
+<h2 class="section-title">Command two ways, switch any time</h2>
+<p class="section-sub">You need both: the Wick can't destroy a carrier alone, and the Lodestar can't clear a swarm without its fighters.</p>
+<div class="grid">
+<div class="tile" style="--c:#38e1ff"><h3>Pilot the Lodestar</h3><p>A heavy flagship with turrets, a fighter swarm and the Lance main cannon. Break enemy shields, wreck subsystems, then fire the Lance into the core.</p></div>
+<div class="tile" style="--c:#ffb347"><h3>Launch the Wick</h3><p>A fast, agile fighter with multi-target missile locks. Hunt enemy fighters and strike weak points the mothership can't reach.</p></div>
+<div class="tile" style="--c:#9b6cff"><h3>14 missions across real stars</h3><p>From Mars to Proxima Centauri, Tau Ceti, Gliese 876, Vega and the Kuiper Gate, all the way to Ashfold, the Ilume home world.</p></div>
+<div class="tile" style="--c:#38e1ff"><h3>Every mission has its own rules</h3><p>EMP storms, lightning, ice rings, twin carriers, locked cores – with cinematic briefings and video calls with your crew.</p></div>
+<div class="tile" style="--c:#ffb347"><h3>Fight on board</h3><p>When enemies breach Deck 3, take a rifle and lead the defense yourself in first-person corridor battles, or send the marines and stay on the bridge.</p></div>
+<div class="tile" style="--c:#9b6cff"><h3>Build your fleet</h3><p>Earn Salvage, upgrade turrets, point defense, laser cooling and missiles, and unlock six ships, each with its own strengths.</p></div>
+<div class="tile" style="--c:#38e1ff"><h3>Choices that matter</h3><p>Story choices lead to different endings.</p></div>
+<div class="tile" style="--c:#ffb347"><h3>Kind to your device</h3><p>Built for phones and tablets, with adaptive quality that keeps your device cool.</p></div>
+</div>
+
+<section class="card" aria-labelledby="langs">
+<h2 id="langs">Play in your language</h2>
+<p>Lodestar is available in ten languages. Choose yours in the game's <span class="ui">Settings</span>:</p>
+<ul class="langlist">
+<li lang="en">English</li><li lang="vi">Tiếng Việt</li><li lang="ja">日本語</li><li lang="ko">한국어</li><li lang="zh-Hans">简体中文</li><li lang="zh-Hant">繁體中文</li><li lang="de">Deutsch</li><li lang="fr">Français</li><li lang="ru">Русский</li><li lang="pt-BR">Português (Brasil)</li>
+</ul>
+</section>
+
+<section class="card" aria-labelledby="fair">
+<h2 id="fair">Fair to play</h2>
+<ul>
+<li><strong>No energy timers, no loot boxes.</strong> Play as long as you like. Nothing you can buy gives a random reward.</li>
+<li><strong>Rewarded ads are optional.</strong> Watch one only when you want a reward or a second chance.</li>
+<li><strong>Never in the middle of a battle.</strong> Interstitial ads may appear now and then between missions, never during a fight. The Remove ads pack and the Admiral Pass switch them off.</li>
+<li><strong>Optional in-app purchases.</strong> Lumen Cores packs, a Starter pack, Remove ads and the monthly Admiral Pass subscription, through Google Play or the App Store.</li>
+<li><strong>No account, saved on your device.</strong> There is no sign-in and no cloud save. Where a consent choice applies, you can change how ads use your data at any time with the in-game <span class="ui">Ad privacy</span> button.</li>
+</ul>
+<p>Read our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Use</a>, or visit <a href="support.html">Support</a> if you need a hand.</p>
+<p class="meta">Effective date: November 23, 2026</p>
+</section>
+
+</main>
+<footer class="site-foot">
+<div class="wrap foot-in">
+<div><strong>Lodestar: Galactic Fleet War</strong><br>© 2026 DOLOTECH TECHNOLOGY CO., LTD. All rights reserved.<br>Contact: <a href="mailto:dolotech.vn@gmail.com">dolotech.vn@gmail.com</a></div>
+<nav aria-label="Footer"><ul><li><a href="index.html">Home</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li><li><a href="support.html">Support</a></li></ul></nav>
+</div>
+</footer>
+</body>
+</html>
