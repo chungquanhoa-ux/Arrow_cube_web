@@ -11,8 +11,9 @@
 <meta name="referrer" content="no-referrer">
 <link rel="canonical" href="https://dolotech.vn/lodestar/privacy.html">
 <link rel="alternate" hreflang="en" href="https://dolotech.vn/lodestar/privacy.html"><link rel="alternate" hreflang="vi" href="https://dolotech.vn/lodestar/privacy-vi.html"><link rel="alternate" hreflang="x-default" href="https://dolotech.vn/lodestar/privacy.html">
-<meta property="og:type" content="website"><meta property="og:title" content="Privacy Policy – Lodestar: Galactic Fleet War"><meta property="og:description" content="How Lodestar handles your information: single-player, no account, progress saved on your device, Google AdMob ads with consent, purchases via Google Play or the App Store."><meta property="og:url" content="https://dolotech.vn/lodestar/privacy.html"><meta property="og:locale" content="en_US"><meta property="og:site_name" content="Lodestar: Galactic Fleet War">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='lsb' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232a1d6b'/%3E%3Cstop offset='1' stop-color='%23060a1c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='1.5' y='1.5' width='37' height='37' rx='10' fill='url(%23lsb)' stroke='%2338e1ff' stroke-width='1.6'/%3E%3Ccircle cx='10' cy='11' r='.9' fill='%23fff'/%3E%3Ccircle cx='31' cy='30' r='.8' fill='%23fff'/%3E%3Ccircle cx='30' cy='9' r='.6' fill='%23fff'/%3E%3Cellipse cx='20' cy='20' rx='14.5' ry='5.2' fill='none' stroke='%2338e1ff' stroke-width='1.3' stroke-opacity='.8' transform='rotate(-22 20 20)'/%3E%3Cpath d='M20 5.5L22.5 17.5L34.5 20L22.5 22.5L20 34.5L17.5 22.5L5.5 20L17.5 17.5Z' fill='%23ffb347'/%3E%3Ccircle cx='20' cy='20' r='2.6' fill='%23fff4dc'/%3E%3C/svg%3E">
+<meta property="og:type" content="website"><meta property="og:title" content="Privacy Policy – Lodestar: Galactic Fleet War"><meta property="og:description" content="How Lodestar handles your information: single-player, no account, progress saved on your device, Google AdMob ads with consent, purchases via Google Play or the App Store."><meta property="og:url" content="https://dolotech.vn/lodestar/privacy.html"><meta property="og:locale" content="en_US"><meta property="og:site_name" content="Lodestar: Galactic Fleet War"><meta property="og:image" content="https://dolotech.vn/lodestar/media/keyart.jpg"><meta property="og:image:width" content="1024"><meta property="og:image:height" content="500"><meta property="og:image:alt" content="Lodestar key art: the mothership Lodestar leads the fleet against Ilume warships in a violet nebula"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="96x96" href="media/icon-96.png">
+<link rel="apple-touch-icon" href="media/icon.png">
 <style>
 :root{--bg:#060a1c;--bg2:#0b1230;--card:#0f1739;--card2:#16204a;--ink:#e9eeff;--ink2:#b0bbdf;--line:#29387a;
 --cyan:#38e1ff;--link:#86ecff;--amber:#ffb347;--amber2:#ffc978;--violet:#9b6cff;--radius:16px}
@@ -53,11 +54,6 @@ nav.main a[aria-current=page]{background:var(--cyan);color:#03121f}
 .hero h1{font-size:clamp(2rem,5vw,3.05rem);margin:.15em 0 .3em}
 .hero .tag{font-size:1.14rem;color:var(--ink2);max-width:33em;margin:0}
 .eyebrow{display:inline-block;font-size:.8rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--amber)}
-.scene{width:100%;max-width:460px;height:auto;justify-self:center;filter:drop-shadow(0 12px 26px rgba(56,225,255,.18))}
-.scene .tw{animation:tw 3.2s ease-in-out infinite}
-.scene .wick{animation:bob 4s ease-in-out infinite}
-@keyframes tw{0%,100%{opacity:.25}50%{opacity:1}}
-@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
 .badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
 .badge{display:inline-block;padding:9px 16px;border:1px solid var(--line);border-radius:12px;background:var(--card);font-weight:800;line-height:1.3;color:#fff}
 .badge span{display:block;font-weight:600;font-size:.8rem;color:var(--ink2)}
@@ -112,16 +108,31 @@ details .a{padding:2px 18px 10px}
 .site-foot a:hover{color:var(--amber2)}
 .foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px 24px}
 .site-foot ul{gap:6px 16px}
-@media (max-width:760px){.hero{grid-template-columns:1fr;padding-top:26px;gap:18px}.scene{max-width:340px;order:-1}}
+/* media */
+.brand img{flex:none;border-radius:10px;border:1px solid var(--cyan)}
+.appicon{display:block;width:84px;height:84px;border-radius:20px;border:2px solid var(--cyan);box-shadow:0 8px 20px -8px rgba(56,225,255,.45);margin:0 0 12px}
+.hero-shot{margin:0;justify-self:stretch}
+.hero-shot img{display:block;width:100%;height:auto;aspect-ratio:1024/500;object-fit:cover;border-radius:18px;border:1px solid var(--cyan);box-shadow:0 18px 40px -18px rgba(56,225,255,.45);background:var(--card)}
+.hero-shot figcaption{font-size:.85rem;color:var(--ink2);text-align:center;margin-top:8px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin:22px 0 8px;padding:0;list-style:none}
+.gallery figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.gallery a{display:block}
+.gallery a:focus-visible{outline-offset:-3px}
+.gallery img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:var(--bg2)}
+.gallery figcaption{padding:10px 14px 12px;font-weight:700;font-size:.95rem;line-height:1.4;color:#fff}
+.gallery figcaption span{display:block;font-weight:500;color:var(--ink2);font-size:.88rem}
+.status{margin:22px 0}
+.status p{margin:0}
+@media (max-width:760px){.hero{grid-template-columns:1fr;padding-top:26px;gap:18px}.hero-shot{order:-1}.appicon{width:64px;height:64px;border-radius:16px}}
 @media (max-width:420px){body{font-size:16px}.wrap{padding:0 14px}.card{padding:20px 16px}.card h1{font-size:1.6rem}nav.main a{padding:5px 9px;font-size:.9rem}.brand{font-size:1.08rem}}
-@media print{.site-head,.beam,.site-foot,.skip{display:none}body{background:#fff;color:#000}.card{box-shadow:none;border:0;background:#fff}h1,h2,h3,.ui,th{color:#000}a{color:#000}.meta,.tile p{color:#333}th{background:#eee}code{background:#eee;color:#000}.note{background:#fff}}
+@media print{.site-head,.beam,.site-foot,.skip,.gallery{display:none}body{background:#fff;color:#000}.card{box-shadow:none;border:0;background:#fff}h1,h2,h3,.ui,th{color:#000}a{color:#000}.meta,.tile p{color:#333}th{background:#eee}code{background:#eee;color:#000}.note{background:#fff}}
 </style>
 </head>
 <body>
 <a class="skip" href="#content">Skip to content</a>
 <header class="site-head">
 <div class="wrap head-in">
-<a class="brand" href="index.html"><svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><defs><linearGradient id="lsb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a1d6b"/><stop offset="1" stop-color="#060a1c"/></linearGradient></defs><rect x="1.5" y="1.5" width="37" height="37" rx="10" fill="url(#lsb)" stroke="#38e1ff" stroke-width="1.6"/><circle cx="10" cy="11" r=".9" fill="#fff"/><circle cx="31" cy="30" r=".8" fill="#fff"/><circle cx="30" cy="9" r=".6" fill="#fff"/><ellipse cx="20" cy="20" rx="14.5" ry="5.2" fill="none" stroke="#38e1ff" stroke-width="1.3" stroke-opacity=".8" transform="rotate(-22 20 20)"/><path d="M20 5.5L22.5 17.5L34.5 20L22.5 22.5L20 34.5L17.5 22.5L5.5 20L17.5 17.5Z" fill="#ffb347"/><circle cx="20" cy="20" r="2.6" fill="#fff4dc"/></svg><span>Lodestar<small>Galactic Fleet War</small></span></a>
+<a class="brand" href="index.html"><img src="media/icon-96.png" width="40" height="40" alt=""><span>Lodestar<small>Galactic Fleet War</small></span></a>
 <div class="navs">
 <nav class="main" aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li><li><a href="privacy.html" aria-current="page">Privacy</a></li><li><a href="terms.html">Terms</a></li><li><a href="support.html">Support</a></li></ul></nav>
 <nav class="langs" aria-label="Language"><ul><li><a href="privacy.html" hreflang="en" lang="en" aria-current="true" title="English">EN</a></li><li><a href="privacy-vi.html" hreflang="vi" lang="vi" title="Tiếng Việt">VI</a></li></ul></nav>
